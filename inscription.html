@@ -3,12 +3,13 @@
 <head>
 	<title>BDE</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel"stylesheet" href ="style.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  				<a class="navbar-brand" href="index.html"><img src="https://pbs.twimg.com/profile_images/979364402179788800/P-txsoxJ.jpg" width="30" height="30" alt=""></a>
+  				<a class="navbar-brand" href="index.html"><img src="https://arras.cesi.fr/wp-content/uploads/sites/9/2019/05/Cesi_Logo_INGENIEUR_RVB-HD-500x296.jpg" width="50" height="30" alt=""></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
@@ -21,6 +22,57 @@
     		</div>
   			</div>
 		</nav>
-	</header>
+    </header>
+    <form class="container">
+        <h4 class="card-title mt-3 text-center">Inscription</h4>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nom</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Prénom</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prénom">
+          </div>
+        </div>
+		<select class="form-control">
+			<option selected=""> -- Choisir votre centre --</option>
+			<option>Lille</option>
+			<option>Aras</option>
+            <option>Rouen</option>
+            <option>Caen</option>
+            <option>Brest</option>
+            <option>Paris Nanterre</option>
+            <option>Reims</option>
+            <option>Nancy</option>
+            <option>Strasbourg</option>
+            <option>Le Mans</option>
+            <option>Orléans</option>
+            <option>Sait-Nazaire</option>
+            <option>Nantes</option>
+            <option>Châteauroux</option>
+            <option>Dijon</option>
+            <option>La Rochelle</option>
+            <option>Angoulême</option>
+            <option>lyon</option>
+            <option>Grenoble</option>
+            <option>Bordeaux</option>
+            <option>Pau</option>
+            <option>Toulouse</option>
+            <option>Montpellier</option>
+            <option>Aix-en-Provence</option>
+            <option>Nice</option>
+		</select>
+	</div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Adresse mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse mail">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mot de passe</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+          <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un chiffre !</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Créer son compte</button>
+      </form>
 </body
 </html>
