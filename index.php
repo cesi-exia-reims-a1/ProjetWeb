@@ -10,15 +10,15 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="index.html"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
+			<a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="boutique.html">Boutique</a>
-					<a class="nav-item nav-link active" href="evenement.html">Evenement</a>
-					<a class="nav-item nav-link active" href="galerie.html">Galerie</a>
+					<a class="nav-item nav-link active" href="boutique.php">Boutique</a>
+					<a class="nav-item nav-link active" href="evenement.php">Evenement</a>
+					<a class="nav-item nav-link active" href="galerie.php">Galerie</a>
 					<!-- Modal -->
 					<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
@@ -67,7 +67,32 @@
 				</nav>
 			</header>
 			<main>
-
+				<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+					<ol class="carousel-indicators">
+			  			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+				<div class="carousel-inner">
+			  	<div class="carousel-item active">
+					<img class="d-block w-100 taille" src="https://img-new.cgtrader.com/items/911907/93247bf136/red-bull-3d-model-max-obj-fbx-mtl.jpg" alt="First slide">
+			  	</div>
+			  	<div class="carousel-item">
+					<img class="d-block w-100 taille" src="https://hdwallsource.com/img/2018/8/twix-chocolate-computer-wallpaper-62633-64609-hd-wallpapers.jpg" alt="Second slide">
+			  	</div>
+			  	<div class="carousel-item">
+					<img class="d-block w-100 taille" src="https://static.fabrik.io/yok/f4a5cbf141d8670e.jpg?auto=format&lossless=1&w=1920&h=5120&fit=max&s=ba77b1f3075dd03e15a7adf63277dd7b" alt="Third slide">
+			  	</div>
+				</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  		<span class="sr-only">Précedente</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  		<span class="sr-only">Suivante</span>
+					</a>
+		  		</div>
 			</main>
 			<footer>
 

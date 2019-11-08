@@ -7,68 +7,64 @@
     <link rel="stylesheet" href ="style.css">
 </head>
 <body>
-	<header>
+<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="index.html"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    				<span class="navbar-toggler-icon"></span>
-  				</button>
-  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    		<div class="navbar-nav">
-      			<a class="nav-item nav-link active" href="boutique.html">Boutique</a>
-      			<a class="nav-item nav-link active" href="evenement.html">Evenement</a>
-                  <a class="nav-item nav-link active" href="galerie.html">Galerie</a>
- <!-- Modal -->
- <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
- aria-hidden="true">
- <div class="modal-dialog" role="document">
-   <!--Content-->
-   <div class="modal-content form-elegant">
-	 <!--Header-->
-	 <div class="modal-header text-center">
-	   <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Connexion</strong></h3>
-	   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		 <span aria-hidden="true">&times;</span>
-	   </button>
-	 </div>
-	 <!--Body-->
-	 <div class="modal-body mx-4">
-	   <!--Body-->
-	   <div class="md-form mb-5">
-		 <input type="email" id="Form-email1" class="form-control validate">
-		 <label data-error="wrong" data-success="right" for="Form-email1">Email</label>
-	   </div>
- 
-	   <div class="md-form pb-3">
-		 <input type="password" id="Form-pass1" class="form-control validate">
-		 <label data-error="wrong" data-success="right" for="Form-pass1">Mot de passe</label>
-	   </div>
- 
-	   <div class="text-center mb-3">
-		<button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Se connecter</button>
-	  </div>
-	</div>
-	<!--Footer-->
-	<div class="modal-footer mx-5 pt-3 mb-1">
-	  <p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.html" class="blue-text ml-1">
-		  S'inscrire</a></p>
-	 </div>
-   </div>
-   <!--/.Content-->
- </div>
- </div>
- <!-- Modal -->
- 
- <div class="text-center">
- <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a>
- </div>    		</div>
-  			</div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-		</nav>
-	</header>
+			<a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="boutique.php">Boutique</a>
+					<a class="nav-item nav-link active" href="evenement.php">Evenement</a>
+					<a class="nav-item nav-link active" href="galerie.php">Galerie</a>
+					<!-- Modal -->
+					<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<!--Content-->
+							<div class="modal-content form-elegant">
+								<!--Header-->
+								<div class="modal-header text-center">
+									<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Connexion</strong></h3>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<!--Body-->
+								<div class="modal-body mx-4">
+									<!--Body-->
+
+
+									<form method="post" action="scriptConnexion.php" autocomplete="on">
+										<div id="login" class="md-form mb-5">
+											<input type="email" id="email" name= "Adresse_eMail" class="form-control validate">
+											<label data-error="wrong" required ="required" data-success="right" for="email">Email</label>
+										</div>
+										<div class="md-form pb-3">
+											<input type="password" id="password" name ="Mot_De_Passe" class="form-control validate">
+											<label data-error="wrong" data-success="right" required ="required" for="password">Mot de passe</label>
+										</div>
+										<div class="text-center mb-3">
+											<input type="submit" value ="login" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
+										</div>
+									</form>
+								</div>
+
+
+								<!--Footer-->
+								<div class="modal-footer mx-5 pt-3 mb-1">
+									<p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.html" class="blue-text ml-1">S'inscrire</a></p>
+								</div>
+							</div>
+							<!--/.Content-->
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="text-center">
+						<a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a>
+					</div>
+				</nav>
+			</header>
 	<main>
 
 	</main>

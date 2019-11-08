@@ -9,15 +9,15 @@
 <body id="inscription">
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DBDBDB;">
-      <a class="navbar-brand" href="index.html"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
+      <a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-         <a class="nav-item nav-link active" href="boutique.html">Boutique</a>
-         <a class="nav-item nav-link active" href="evenement.html">Evenement</a>
-         <a class="nav-item nav-link active" href="galerie.html">Galerie</a>
+         <a class="nav-item nav-link active" href="boutique.php">Boutique</a>
+         <a class="nav-item nav-link active" href="evenement.php">Evenement</a>
+         <a class="nav-item nav-link active" href="galerie.php">Galerie</a>
        </div>
      </div>
    </nav>
