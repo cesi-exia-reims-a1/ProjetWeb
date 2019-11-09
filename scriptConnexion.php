@@ -31,16 +31,20 @@ if($decrypt){
 
 	if ($ligne['Status_Personne'] === 2)
 	{
+		$requete->execute();
 		header('Location : admin.php');
 		exit();
 	}
-
-	echo 'Connexion réussie.';
+		$requete->execute();
+		header('Location: index.php');
+		exit();
 }
 else{
-	echo  'Connexion échouée';
+		$requete->execute();
+		header('Location: inscription.php');
+		exit();
 }
 //Fermeture de la connexion
-$requete->closeCursor();
+$requete->closeCursor(); 
 ?>
 
