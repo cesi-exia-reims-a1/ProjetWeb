@@ -52,7 +52,7 @@
 
 								<!--Footer-->
 								<div class="modal-footer mx-5 pt-3 mb-1">
-									<p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.html" class="blue-text ml-1">S'inscrire</a></p>
+									<p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.php" class="blue-text ml-1">S'inscrire</a></p>
 								</div>
 							</div>
 							<!--/.Content-->
