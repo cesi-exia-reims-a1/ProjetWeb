@@ -6,10 +6,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href ="style.css">
 </head>
-<body>
-	<body>
+<body id="inscription">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DBDBDB;">
 			<a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -64,13 +63,13 @@
 
 		<main>
 
-		<div class="row">
+		<div class="row" style="margin-top:2em;">
 
 
 		<!--Conditions d'inscription-->
 
 
-			<div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin-left:1%">
+			<div class="card border-dark mb-3" style="max-width: 18rem; margin-left:11%">
   				<div class="card-header">Conditions d'inscription</div>
   				<div class="card-body">
     				<h5 class="card-title">Primary card title</h5>
