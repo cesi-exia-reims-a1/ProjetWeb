@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require("body-parser");
 var mysql = require('mysql');
 var jwt = require('jsonwebtoken');
+let cors = require('cors');
  
 // Nous définissons ici les paramètres du serveur.
 var hostname = 'localhost'; 
@@ -18,6 +19,7 @@ var con = mysql.createConnection({
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // On renseigne les routes  
 app.get('/produit', (req, res) => {
@@ -28,10 +30,25 @@ app.get('/produit', (req, res) => {
       });
 });
 
-app.get('/produit/:produit_id', (req, res) => {
+app.get('/produit/:categorie/:produit_id', (req, res) => {
       
-      var adr = req.params.produit_id
-      var sql = "SELECT * FROM produit WHERE ID_produit = ?"
+      var adr = req.params.categorie
+      var adr2 = req.params.produit_id
+      var sql = "SELECT * FROM produit WHERE Categorie_Produit = ? AND ID_produit = ?"
+      con.query(sql, [adr, adr2], function (err, result) {
+            if (err) throw err;
+            if(result == false){
+                  res.sendStatus(404);
+            } else {
+                  res.json(result);
+            }
+      });
+});
+
+app.get('/produit/:categorie', (req, res) => {
+      
+      var adr = req.params.categorie
+      var sql = "SELECT * FROM produit WHERE Categorie_Produit = ?"
       con.query(sql, [adr], function (err, result) {
             if (err) throw err;
             if(result == false){
@@ -39,6 +56,14 @@ app.get('/produit/:produit_id', (req, res) => {
             } else {
                   res.json(result);
             }
+      });
+});
+
+app.get('/evenement', (req, res) => {
+      
+      con.query("SELECT * FROM evenement", function (err, result) {
+            if (err) throw err;
+            res.json(result);
       });
 });
 
@@ -50,9 +75,9 @@ app.post('/api/posts', verifyToken, (req, res) => {
                   res.json({
                   message: 'Post created...',
                   authData          
-            });
-      }
-   });
+                  });
+            }
+      });
 });
     
 app.post('/api/login', (req, res) => {
