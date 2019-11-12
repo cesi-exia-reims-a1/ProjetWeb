@@ -24,3 +24,9 @@
 .taille{
         margin-top: 2em;
 }
+
+#connexion
+{
+	display: flex;
+	margin-left: auto;
+}

@@ -13,11 +13,11 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="boutique.php">Boutique</a>
-					<a class="nav-item nav-link active" href="evenement.php">Evenement</a>
-					<a class="nav-item nav-link active" href="galerie.php">Galerie</a>
+			<div class="collapse navbar-collapse d-flex bd-highlight" id="navbarNavAltMarkup">
+					<div class="bd-highlight"/><a href="boutique.php" class="nav-item nav-link active text-dark">Boutique</a></div>
+					<div class="bd-highlight"/><a href="evenement.php" class="nav-item nav-link active text-dark">Evenement</a></div>
+					<div class="bd-highlight"/><a href="galerie.php" class="nav-item nav-link active text-dark">Galerie</a></div>
+					<div class="ml-auto bd-highlight"/><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a></div>
 					<!-- Modal -->
 					<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
@@ -33,8 +33,6 @@
 								<!--Body-->
 								<div class="modal-body mx-4">
 									<!--Body-->
-
-
 									<form method="post" action="scriptConnexion.php" autocomplete="on">
 										<div id="login" class="md-form mb-5">
 											<input type="email" id="email" name= "Adresse_eMail" class="form-control validate">
@@ -58,15 +56,14 @@
 							</div>
 							<!--/.Content-->
 						</div>
-					</div>
-					<!-- Modal -->
-					<div class="text-center">
-						<a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a>
-					</div>
+        			<!-- Modal -->
 				</nav>
 			</header>
 	<main>
-
+			<form class="form-inline my-2 my-lg-0">
+            	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        	</form>
 	</main>
 	<footer>
 		
@@ -75,6 +72,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript.js"></script>
 
 </body>
 </html>
