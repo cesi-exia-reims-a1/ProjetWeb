@@ -45,8 +45,16 @@ p
     text-align: justify;
 }
 
-#article
+#article h1
 {
-    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
 }
 
+#article img
+{
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+}

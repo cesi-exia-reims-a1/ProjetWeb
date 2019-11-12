@@ -55,8 +55,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 										</div>
 									</form>
 								</div>
-
-
 								<!--Footer-->
 								<div class="modal-footer mx-5 pt-3 mb-1">
 									<p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.php" class="blue-text ml-1">S'inscrire</a></p>
@@ -67,27 +65,45 @@ header("Access-Control-Allow-Headers: X-Requested-With");
         			<!-- Modal -->
 				</nav>
 			</header>
-	<main>
-			<form class="form-inline my-2 my-lg-0 p-3">
-            	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-        	</form>
-        	<div class="w3-container">
-        		<div class="row mx-3">
-        			<div class="col-2 ">
-        				<h1>Catégories</h1>
-        				<p>Catégorie 1 / Catégorie 1 / Catégorie 1</p>
-        				<p>Catégorie 2 / Catégorie 2 / Catégorie 2</p>
-        				<p>Catégorie 3 / Catégorie 3 / Catégorie 3</p>
-        				<p>Catégorie 4 / Catégorie 4 / Catégorie 4</p>
-        				<p>Catégorie 5 / Catégorie 5 / Catégorie 5</p>
-        				<p>Catégorie 6 / Catégorie 6 / Catégorie 6</p>
-        				<p>Catégorie 7 / Catégorie 7 / Catégorie 7</p>
-        			</div>
-        			<div class="w3-container mx-5 col-9" id="article">
-        			</div>
-        		</div>
-        	</div>
+	<main class="container-fluid mt-3">
+		<div class="row mb-5">
+			<div class="col">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-2">
+							<select class="form-control">
+			            		<option>Filtrer</option>
+			            		<option>Trier par prix croissant</option>
+			            		<option>Trier par prix décroissant</option>
+			            		<option>Trier par ...</option>
+			            	</select>
+						</div>
+						<div class="col-5 text-center">
+							<h1>Boutique</h1>
+						</div>
+						<div class="col-2">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+						</div>
+						<div class="col-2">
+							<select class="form-control">
+			            		<option>Choisissez votre catégorie</option>
+			            		<option>Alimentation</option>
+			            		<option>Goodies</option>
+			            	</select>
+						</div>
+						<div class="col-1 text-right">
+							<button class="btn btn-outline-success" type="submit">Rechercher</button>
+						</div>
+	        		</div>
+	        	</div>
+			</div>
+	    </div>
+		<div class="row">
+			<div class="col" >
+				<div class="container-fluid" id="articles">
+				</div>
+			</div>
+		</div>		
 	</main>
 	<footer>
 		
