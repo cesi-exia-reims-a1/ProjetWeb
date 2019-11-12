@@ -94,24 +94,21 @@
     				</ol>
     				<div class="carousel-inner">
       				<div class="carousel-item active">
-        				<img src="https://i.ytimg.com/vi/2VcUHKj2Nj4/maxresdefault.jpg" class="d-block w-100" alt="PGW">
+        				<img src="" class="d-block w-100" alt="PGW">
         				<div class="carousel-caption d-none d-md-block">
           				<h5>Paris Games Week</h5>
-          				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         				</div>
       				</div>
-      				<div class="carousel-item">
+      				<div class="carousel-item" id="evenement">
         				<img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/08/gamescom-2019.jpg" class="d-block w-100" alt="Gamescom">
         				<div class="carousel-caption d-none d-md-block">
           				<h5>Gamescom</h5>
-          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         				</div>
       				</div>
       				<div class="carousel-item">
         				<img src="https://lemagjeuxhightech.com/wp-content/uploads/2018/06/E3-2018-demandez-le-programme-des-conferences-.jpg" class="d-block w-100" alt="E3">
         				<div class="carousel-caption d-none d-md-block">
           				<h5>E3</h5>
-          				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         				</div>
       				</div>
     				</div>
