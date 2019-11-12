@@ -1,4 +1,4 @@
-var articleElt = document.getElementById("article");
+var articleElt = document.getElementById("evenement");
 ajaxGet("http://localhost:3000/evenement", function (reponse) {
     // Transforme la réponse en un tableau d'articles
     var article = JSON.parse(reponse);
