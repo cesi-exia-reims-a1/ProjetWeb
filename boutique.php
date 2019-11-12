@@ -1,3 +1,11 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,43 +85,15 @@
         				<p>Catégorie 7 / Catégorie 7 / Catégorie 7</p>
         			</div>
         			<div class="w3-container mx-5 col-9" id="article">
-        				<h2>
-        					Test:)
-        				</h2>
-<!--         				<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
-<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a> -->
         			</div>
         		</div>
         	</div>
-    <script src="/apirest/ajax.js"></script>
-    <script src="/apirest/cours.js"></script>
 	</main>
 	<footer>
 		
 	</footer>
+	<script src="./apirest/ajax.js"></script>
+    <script src="./apirest/cours.js"></script>
 	<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
