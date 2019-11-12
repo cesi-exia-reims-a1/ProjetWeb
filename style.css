@@ -30,3 +30,18 @@
 	display: flex;
 	margin-left: auto;
 }
+<<<<<<< HEAD
+=======
+
+h1
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+p
+{
+    margin-top: 30px;
+    text-align: justify;
+}
+>>>>>>> d35bef0162f3aa9205bcd382a9b38b5bb9949408
