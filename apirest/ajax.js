@@ -1,13 +1,15 @@
 // Exécute un appel AJAX GET
 
-var $articles = $ ('#articles');
+$(function (){
+    var $articles = $('#articles');
 
-$.ajax({
-    type: 'GET' ,
-    url: 'http://localhost:3000/produit',
-    success: function(produits) {
-        $.each(produits, function(i, produit) {
-            $produits.append('<img src="produit.Photo_produit">')
-        })
-    }
-})
+    $.ajax({
+        type: 'GET' ,
+        url: 'http://localhost:3000/produit',
+        success: function(articles) {
+            $.each(articles, function(i, article) {
+                $articles.append('<img src=' + article.Photo_Produit + '>');
+            });
+        }
+    });
+});
