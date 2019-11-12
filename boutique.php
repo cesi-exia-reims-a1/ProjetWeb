@@ -60,10 +60,56 @@
 				</nav>
 			</header>
 	<main>
-			<form class="form-inline my-2 my-lg-0">
+			<form class="form-inline my-2 my-lg-0 p-3">
             	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
         	</form>
+        	<div class="w3-container">
+        		<div class="row mx-3">
+        			<div class="col-2 ">
+        				<h1>Catégories</h1>
+        				<p>Catégorie 1 / Catégorie 1 / Catégorie 1</p>
+        				<p>Catégorie 2 / Catégorie 2 / Catégorie 2</p>
+        				<p>Catégorie 3 / Catégorie 3 / Catégorie 3</p>
+        				<p>Catégorie 4 / Catégorie 4 / Catégorie 4</p>
+        				<p>Catégorie 5 / Catégorie 5 / Catégorie 5</p>
+        				<p>Catégorie 6 / Catégorie 6 / Catégorie 6</p>
+        				<p>Catégorie 7 / Catégorie 7 / Catégorie 7</p>
+        			</div>
+        			<div class="w3-container mx-5 col-9" id="article">
+        				<h2>
+        					Test:)
+        				</h2>
+<!--         				<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a>
+<a href=""><img class="mt-3" src="Fond_decran.jpg" height="200" width="200">Produit 1</a> -->
+        			</div>
+        		</div>
+        	</div>
+    <script src="/apirest/ajax.js"></script>
+    <script src="/apirest/cours.js"></script>
 	</main>
 	<footer>
 		
@@ -73,6 +119,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="javascript.js"></script>
+
 
 </body>
 </html>
