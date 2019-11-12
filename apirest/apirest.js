@@ -22,8 +22,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // On renseigne les routes  
-app.get('/produit', (req, res) => {
-      
+app.get('/produit', (req, res) => {  
       con.query("SELECT * FROM produit", function (err, result) {
             if (err) throw err;
             res.json(result);
