@@ -35,7 +35,7 @@ if($decrypt){
        
 	if ($ligne['Status_Personne'] === '1')
 	{
-		//header('Location: index.php');
+		header('Location: index.php');
 		exit();
 	}
 
