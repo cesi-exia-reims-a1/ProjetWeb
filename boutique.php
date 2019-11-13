@@ -70,26 +70,25 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="col">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-2">
+						<div class="col-1,5">
 							<select class="form-control">
 			            		<option>Filtrer</option>
 			            		<option>Trier par prix croissant</option>
 			            		<option>Trier par prix décroissant</option>
 			            		<option>Trier par ...</option>
 			            	</select>
-						</div>
-						<div class="col-5 text-center">
-							<h1>Boutique</h1>
-						</div>
-						<div class="col-2">
-							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-						</div>
-						<div class="col-2">
+						</div>						<div class="col-1,5">
 							<select class="form-control">
 			            		<option>Choisissez votre catégorie</option>
 			            		<option>Alimentation</option>
 			            		<option>Goodies</option>
 			            	</select>
+						</div>
+						<div class="col-6 text-center">
+							<h1>Boutique</h1>
+						</div>
+						<div class="col-2">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
 						</div>
 						<div class="col-1 text-right">
 							<button class="btn btn-outline-success" type="submit">Rechercher</button>
@@ -99,8 +98,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			</div>
 	    </div>
 		<div class="row">
-			<div class="col" >
-				<div class="container-fluid" id="articles">
+			<div class="col">
+				<div class="container-fluid">
+					<div class="row" id="articles"> 
+					</div>
 				</div>
 			</div>
 		</div>		

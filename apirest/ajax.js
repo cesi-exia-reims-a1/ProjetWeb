@@ -10,8 +10,7 @@ $(function (){
         url: 'http://localhost:3000/produit',
         success: function(articles) {
             $.each(articles, function(i, article) {
-                $articles.append('<img src=' + article.Photo_Produit + '>');
-                $articles.append('<p>' + article.Nom_Produit + '</p>');
+                $articles.append('<div class="container-fluid col-3 border border-secondary m-5"><center><img src=' + article.Photo_Produit + '><center><h2>' + article.Nom_Produit + '</h2><h3>' + article.Prix_Produit + '€</h3></div>');
             });
         }
     });

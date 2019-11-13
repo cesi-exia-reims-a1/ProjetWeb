@@ -45,16 +45,23 @@ p
     text-align: justify;
 }
 
-#article h1
+#articles
 {
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
+    margin-left: 7em;
 }
 
-#article img
+#articles div
 {
+    background-color: gainsboro;
     text-align: center;
-    align-items: center;
-    margin-left: auto;
 }
+
+/* body
+{
+    background-color: ghostwhite;
+}
+
+header
+{
+    background-color: gainsboro;
+} */
