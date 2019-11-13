@@ -84,7 +84,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="KinderBueno.jpg"></center>
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
 					</div>
 					<div class="col-3">
 						<h2>Quantité</h2>
@@ -92,11 +93,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="col-3">
 						<h2>Prix</h2>
 					</div>
-					<h1>Nom Produit</h1>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="redbull.png"></center>
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
 					</div>
 					<div class="col-3">
 						<h2>Quantité</h2>
@@ -104,11 +105,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="col-3">
 						<h2>Prix</h2>
 					</div>
-					<h1>Nom Produit</h1>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="mug.png"></center>
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
 					</div>
 					<div class="col-3">
 						<h2>Quantité</h2>
@@ -116,11 +117,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="col-3">
 						<h2>Prix</h2>
 					</div>
-					<h1>Nom Produit</h1>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="twix.png"></center>
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
 					</div>
 					<div class="col-3">
 						<h2>Quantité</h2>
@@ -128,11 +129,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="col-3">
 						<h2>Prix</h2>
 					</div>
-					<h1>Nom Produit</h1>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="coca.png"></center>
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
 					</div>
 					<div class="col-3">
 						<h2>Quantité</h2>
@@ -140,9 +141,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="col-3">
 						<h2>Prix</h2>
 					</div>
-					<h1>Nom Produit</h1>
 				</div>
 				<h2 id="prixTotal">Prix total</h2>
+				<h1 class="btn border border-dark p-2">Valider la commande</h1>
+				<div class="p-5"></div>
 			</div>
 		</div>
 	</main>
