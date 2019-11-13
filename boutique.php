@@ -95,11 +95,12 @@
 			<div class="col">
 				<div class="container-fluid">
 					<div><a class="row active text-dark" href="produit.php" id="articles"></a> 
+					<?php include("displayProduct.php"); ?>	
+					<div class="container-fluid col-3 border border-secondary m-5"><center><img src=<?php echo $ligne['Photo_Produit']?>><center> <h2> <?php echo $ligne['Nom_Produit']?> </h2><h3> <?php echo  $ligne['Prix_Produit']?> €</h3></div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<?php include("displayProduct.php"); ?>		
+		</div>	
 	</main>
 	<footer>
 		
