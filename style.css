@@ -56,12 +56,23 @@ p
     text-align: center;
 }
 
-/* body
+#imageProduit
 {
-    background-color: ghostwhite;
+    height: 100%;
+    width: 50%;
 }
 
-header
+h3
 {
-    background-color: gainsboro;
-} */
+    text-align: justify;
+}
+
+#imgProduit
+{
+    background-color: grey;
+}
+
+#prixTotal
+{
+    text-align: right;
+}
