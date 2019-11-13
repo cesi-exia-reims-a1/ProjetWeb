@@ -7,10 +7,11 @@ $(function (){
 
     $.ajax({
         type: 'GET' ,
-        url: 'http://localhost:3000/produit',
-        success: function(articles) {
-            $.each(articles, function(i, article) {
-                $articles.append('<div class="container-fluid col-3 border border-secondary m-5"><center><img src=' + article.Photo_Produit + '><center><h2>' + article.Nom_Produit + '</h2><h3>' + article.Prix_Produit + '€</h3></div>');
+        url: 'http://localhost/projetWeb/displayEvenement.php',
+        dataType:'json',
+        success: function(reponse) {
+            $.each(reponse.data, function(i, article) {
+                $evenement.append('<div class="container-fluid col-3 border border-secondary m-5"><center><img src=' + article.Photo_Produit + '><center><h2>' + article.Nom_Evenement + '</h2><h3>' + article.Prix_Produit + '€</h3></div>');
             });
         }
     });

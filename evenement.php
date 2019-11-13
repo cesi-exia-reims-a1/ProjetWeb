@@ -89,7 +89,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
   				</div>
 			</div>
 
-
 			<!--Carousel événements-->
 
 

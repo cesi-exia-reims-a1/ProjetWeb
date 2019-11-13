@@ -1,6 +1,8 @@
 <?php
 
-$reponse;
+$reponse = [
+    "success" => false
+];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
@@ -10,8 +12,9 @@ $requete->execute();
 
 while($ligne=$requete->fetch()){
     while($donnee = $requete->fetch(PDO::FETCH_ASSOC)){
-        $reponse = $donnee;
+        $reponse["data"][] = $donnee;
     }
+    $reponse["success"] = true;
 }
 
 echo json_encode ($reponse);
