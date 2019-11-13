@@ -69,25 +69,25 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<main class="container-fluid p-5">
 			<div class="row p-5">
 				<div class="col-8">
-					<div class="border border-dark">
-						<center><img src="oasis.png" id="imageProduit"></center>
+					<div class="" id="imgProduit">
+						<center><img src="mug.png" id="imageProduit"></center>
 					</div>
 					<div>
-						<center><h1>Nom du Produit</h1></center>
+						<center><h1 class="pt-5">Nom du Produit</h1></center>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="border border-danger p-3">
 						<center><h1 class="pb-5">Description</h1></center>
-						<h3> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
+						<h3 class="pb-5"> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
 					</div>
 					<div class="container-fluid">
-						<div class="row">
+						<div class="row p-5">
 							<div class="col">
-								<h1>Prix</h1>
+								<h2>Prix :</h2>
 							</div>
 							<div class="col">
-								<h1>Quantité</h1>
+								<h2>Quantité</h2>
 							</div>
 						</div>
 					</div>

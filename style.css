@@ -66,3 +66,13 @@ h3
 {
     text-align: justify;
 }
+
+#imgProduit
+{
+    background-color: grey;
+}
+
+#prixTotal
+{
+    text-align: right;
+}

@@ -66,7 +66,85 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				</nav>
 			</header>
 	<main>
-		
+		<div class="container">
+			<a class="border text-dark" href="boutique.php">Retour à la boutique</a>
+			<center><h1>Mon Panier</h1></center>
+			<div class="container-fluid pt-5">
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="kitkat.jpg">
+						<h1>Nom Produit</h1></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="KinderBueno.jpg"></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+					<h1>Nom Produit</h1>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="redbull.png"></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+					<h1>Nom Produit</h1>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="mug.png"></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+					<h1>Nom Produit</h1>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="twix.png"></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+					<h1>Nom Produit</h1>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="coca.png"></center>
+					</div>
+					<div class="col-3">
+						<h2>Quantité</h2>
+					</div>
+					<div class="col-3">
+						<h2>Prix</h2>
+					</div>
+					<h1>Nom Produit</h1>
+				</div>
+				<h2 id="prixTotal">Prix total</h2>
+			</div>
+		</div>
 	</main>
 
 	<footer>

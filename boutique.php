@@ -101,7 +101,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<div class="row">
 			<div class="col">
 				<div class="container-fluid">
-					<div class="row" id="articles"> 
+					<div><a class="row active text-dark" href="produit.php" id="articles"></a> 
 					</div>
 				</div>
 			</div>

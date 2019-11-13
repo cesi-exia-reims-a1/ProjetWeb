@@ -7,7 +7,7 @@ $(function (){
 
     $.ajax({
         type: 'GET' ,
-        url: 'http://localhost/projetweb/displayProduct.php',
+        url: 'http://localhost:3000/produit',
         success: function(articles) {
             $.each(articles, function(i, article) {
                 $articles.append('<div class="container-fluid col-3 border border-secondary m-5"><center><img src=' + article.Photo_Produit + '><center><h2>' + article.Nom_Produit + '</h2><h3>' + article.Prix_Produit + '€</h3></div>');
