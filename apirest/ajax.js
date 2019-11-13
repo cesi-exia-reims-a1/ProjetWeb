@@ -11,6 +11,7 @@ $(function (){
         success: function(articles) {
             $.each(articles, function(i, article) {
                 $articles.append('<img src=' + article.Photo_Produit + '>');
+                $articles.append('<p>' + article.Nom_Produit + '</p>');
             });
         }
     });
