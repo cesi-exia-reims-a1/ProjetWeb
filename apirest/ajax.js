@@ -3,7 +3,7 @@
 $(function (){
     var $articles = $('#articles');
     var $evenement = $('#evenement');
-    var $centres = $('#centre')
+    var $centres = $('#centre');
 
     $.ajax({
         type: 'GET' ,
@@ -30,7 +30,7 @@ $(function (){
         url: 'http://localhost:3000/centre',
         success: function(centres) {
             $.each(centres, function(i, centre) {
-                $centres.append('<option' + centre.Nom_Centre + '</option>');
+                $centres.append('<option value=' + centre.ID_Centre + '>' + centre.Nom_Centre + '</option>');
             });
         }
     });

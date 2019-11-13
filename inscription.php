@@ -44,10 +44,9 @@
       <!-- création menu défilant campus -->
 
       <div id="register" >
-        <label for= "Choose_center">Choose a center</label>
-        <select name="Centre_Personne" id="Choose_center" class="form-control">
-      
-         <option selected="" id="centre"> -- Choisir votre centre --</option>
+        <label for="centre">Centre</label>
+        <select name="ID_Centre" id="centre" class="form-control">
+         <option selected=""> -- Choisir votre centre --</option>
        </select>
      </div>
      
@@ -61,7 +60,7 @@
     <!-- création Bouton Mot de passe -->
 
     <div id="register" class="form-group">
-      <label for="passwordsignup">Password</label>
+      <label for="passwordsignup">Mot de passe</label>
       <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe" maxlength="12" placeholder="Mot de passe">
       <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un chiffre !</small>
     </div>
@@ -81,8 +80,6 @@
   </form>
 </main> 
 
-
-
 <footer>
   
 </footer>
@@ -100,6 +97,8 @@
             document.getElementById("bloc_disparaitre").style.display="none";
         }
 }</script>
+<script src="./vendor/node_modules/jquery/dist/jquery.js"></script>
+<script src="./apirest/ajax.js"></script>
 </div>
 </body>
 </html>
