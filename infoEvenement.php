@@ -68,21 +68,19 @@
 				</nav>
 			</header>
 			<main>
-				<div style="text-align: center;"> <h3> Les trois derniers événements !</h3>	</div>	
-				<div class="card mb-12" style="max-width: 540px;">
-					<div class="row no-gutters">
-    					<div class="col-md-4">
-    						<img src="..." class="card-img" alt="...">
-    					</div>
-					<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-					</div>
-					</div>
+			<div >
+				<div class="card mt-4">
+          			<img class="card-img-top img-fluid" src="e3.png" alt="événement">
+          		<div class="card-body">
+            		<h3 class="card-title">Nom de l'événement</h3>
+            		<h4>5.00€</h4>
+            		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+					<p class="signin button"> 
+       					<input type="submit" value="S'inscrire à cet événement !" id="submitButton" />
+    				</p>  
 				</div>
+        		</div>
+			</div>	 	
 			</main>
 			<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
