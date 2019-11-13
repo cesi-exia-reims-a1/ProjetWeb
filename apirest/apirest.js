@@ -29,6 +29,14 @@ app.get('/produit', (req, res) => {
       });
 });
 
+app.get('/centre', (req, res) => {  
+      con.query("SELECT * FROM centre", function (err, result) {
+            if (err) throw err;
+            res.json(result);
+      });
+});
+
+
 app.get('/produit/:categorie/:produit_id', (req, res) => {
       
       var adr = req.params.categorie

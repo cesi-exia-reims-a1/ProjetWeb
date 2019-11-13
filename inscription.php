@@ -47,32 +47,7 @@
         <label for= "Choose_center">Choose a center</label>
         <select name="Centre_Personne" id="Choose_center" class="form-control">
       
-         <option selected=""> -- Choisir votre centre --</option>
-         <option>Lille</option>
-         <option>Aras</option>
-         <option>Rouen</option>
-         <option>Caen</option>
-         <option>Brest</option>
-         <option>Paris Nanterre</option>
-         <option>Reims</option>
-         <option>Nancy</option>
-         <option>Strasbourg</option>
-         <option>Le Mans</option>
-         <option>Orléans</option>
-         <option>Sait-Nazaire</option>
-         <option>Nantes</option>
-         <option>Châteauroux</option>
-         <option>Dijon</option>
-         <option>La Rochelle</option>
-         <option>Angoulême</option>
-         <option>lyon</option>
-         <option>Grenoble</option>
-         <option>Bordeaux</option>
-         <option>Pau</option>
-         <option>Toulouse</option>
-         <option>Montpellier</option>
-         <option>Aix-en-Provence</option>
-         <option>Nice</option>
+         <option selected="" id="centre"> -- Choisir votre centre --</option>
        </select>
      </div>
      
