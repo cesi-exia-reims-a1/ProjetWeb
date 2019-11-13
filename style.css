@@ -1,4 +1,4 @@
-#inscription{
+#couleur{
     background-color: #ECECEC;
 }
 .form-elegant .font-small {
@@ -22,7 +22,7 @@
 .form-elegant .modal-body, .form-elegant .modal-footer {
     font-weight: 400; }
 .taille{
-        margin-top: 2em;
+       margin-top: 1em;
 }
 
 #connexion

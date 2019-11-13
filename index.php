@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href ="style.css">
 	<link rel="stylesheet" href="javascript.js">
 </head>
-<body id="inscription">
+<body id="couleur">
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DBDBDB;">
 			<a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
@@ -60,8 +60,13 @@
         			<!-- Modal -->
 				</nav>
 			</header>
+
 			<main>
-				<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+
+
+				<!--carousel acceuil-->
+
+				<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel" > 
 					<ol class="carousel-indicators">
 			  			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			  			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -88,60 +93,42 @@
 					</a>
 				  </div>
 
-				<div class="row" style="margin-top:5em;">
-				<!-- Timeline Twitter-->
 
-				<div class="card-deck" style="margin-right:1em;margin-left:3em;">
-  					<div class="card">
-					  <a class="twitter-timeline" href="https://twitter.com/CESIingenieurs?ref_src=twsrc%5Etfw">Tweets by CESIingenieurs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    				</div>
+				<!--Evenement-->
+
+				<div class="container" style="margin-top:5em; background-color:white;">
+					<div class="row">
+						<div class="col-md-7">
+							<h2 class=>E3</h2>
+							<p class="lead">Description de l'événement</p>
+						</div>
+						<div class="col-md-5">
+							<img src="https://lemagjeuxhightech.com/wp-content/uploads/2018/06/E3-2018-demandez-le-programme-des-conferences-.jpg" class="d-block w-100" alt="E3">
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-7 order-md-2">
+							<h2 class=>Gamescom</h2>
+							<p class="lead">Description de l'événement</p>
+						</div>
+						<div class="col-md-5 order-md-1">
+							<img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/08/gamescom-2019.jpg" class="d-block w-100" alt="Gamescom">
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-7">
+							<h2 class=>E3</h2>
+							<p class="lead">Description de l'événement</p>
+						</div>
+						<div class="col-md-5">
+							<img src="https://lemagjeuxhightech.com/wp-content/uploads/2018/06/E3-2018-demandez-le-programme-des-conferences-.jpg" class="d-block w-100" alt="E3">
+						</div>
+					</div>
+					<hr>
 				</div>
-
-
-				<!-- Carousel événement -->
-
-				<div class="bd-example container" >
-  					<div id="carouselExampleCaptions" class="carousel slide container" data-ride="carousel">
-    					<ol class="carousel-indicators">
-      					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    					</ol>
-    					<div class="carousel-inner">
-      					<div class="carousel-item active">
-        					<img src="https://s1.1zoom.me/b3055/703/Guardians_of_the_Galaxy_Vol._2_Raccoons_Rocket_523942_1920x1080.jpg" class="d-block w-100" alt="PGW">
-        					<div class="carousel-caption d-none d-md-block">
-          					<h5>Paris Games Week</h5>
-        					</div>
-      					</div>
-      					<div class="carousel-item" id="evenement">
-        					<img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/08/gamescom-2019.jpg" class="d-block w-100" alt="Gamescom">
-        					<div class="carousel-caption d-none d-md-block">
-          					<h5>Gamescom</h5>
-        					</div>
-      					</div>
-      					<div class="carousel-item">
-        					<img src="https://lemagjeuxhightech.com/wp-content/uploads/2018/06/E3-2018-demandez-le-programme-des-conferences-.jpg" class="d-block w-100" alt="E3">
-        					<div class="carousel-caption d-none d-md-block">
-          					<h5>E3</h5>
-        					</div>
-      					</div>
-    					</div>
-    					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      					<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-      					<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-				</div>
-				</div>	
 			</main>
-			<footer>
-
-			</footer>
 			<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
