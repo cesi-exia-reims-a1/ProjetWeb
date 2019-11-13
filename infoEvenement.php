@@ -68,7 +68,7 @@
 				</nav>
 			</header>
 			<main>
-			<div >
+			<div class="container">
 				<div class="card mt-4">
           			<img class="card-img-top img-fluid" src="e3.png" alt="événement">
           		<div class="card-body">
