@@ -22,10 +22,9 @@
 					<div class="bd-highlight"/><a href="boutique.php" class="nav-item nav-link active text-dark">Boutique</a></div>
 					<div class="bd-highlight"/><a href="evenement.php" class="nav-item nav-link active text-dark">Evenement</a></div>
 					<div class="bd-highlight"/><a href="galerie.php" class="nav-item nav-link active text-dark">Galerie</a></div>
-					<div class="ml-auto bd-highlight"/><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">
 					<?php
 					 if (!isset($_SESSION['pseudo'])){
-						 echo "Connexion</a></div><div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+						 echo "<div class='ml-auto bd-highlight'/><a href='' class='btn btn-default btn-rounded' data-toggle='modal' data-target='#elegantModalForm'>Connexion</a></div><div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
 						 <div class='modal-dialog' role='document'>
 							 <!--Content-->
 							 <div class='modal-content form-elegant'>
@@ -63,7 +62,7 @@
 							 <!--/.Content-->
 						 </div>";
 					 } else {
-						echo 'Deconnexion</a></div>';
+						echo "<div class='ml-auto bd-highlight'/><a href='Deconnexion.php' class='btn btn-default btn-rounded'>Deconnexion</a></div>";
 					 }
 					 ?>
 				</nav>
