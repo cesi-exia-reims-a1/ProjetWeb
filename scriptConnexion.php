@@ -28,28 +28,30 @@ $jwt = JWT::encode($token, 'secretkey');
 if($decrypt){
 	if (isset($_SESSION['pseudo'])){
 		session_destroy();
-        session_start();
-		$_SESSION['pseudo'] = $pseudo;
-		echo $_SESSION['pseudo'];
 	}
        
 	if ($ligne['Status_Personne'] === '1')
 	{
+		session_start();
+		$_SESSION['pseudo'] = $pseudo;
 		header('Location: index.php');
 		exit();
 	}
 
 	if ($ligne['Status_Personne'] === 2)
 	{
+		session_start();
+		$_SESSION['pseudo'] = $pseudo;
 		header('Location : admin.php');
 		exit();
 	}
+		session_start();
+		$_SESSION['pseudo'] = $pseudo;
 		header('Location: index.php');
 		exit();
 }
 else{
-		header('Location: inscription.php');
-		
+		header('Location: inscription.php');		
 		exit();
 }
 //Fermeture de la connexion
