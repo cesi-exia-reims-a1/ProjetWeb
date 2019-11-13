@@ -69,3 +69,25 @@ p
 {
     text-align: right;
 }
+
+/*# = id
+. = class
+*/
+.nolink:hover{
+    text-decoration: none;  
+    color: grey; 
+}
+
+.nolink{
+    color: black;
+}
+
+.produitPanier
+{
+    font:Verdana, Geneva, sans-serif;
+    font-size:18px;
+    text-align:left;
+    height:50px;
+    vertical-align:middle;
+    line-height: 50px;
+}

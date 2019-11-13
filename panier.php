@@ -67,7 +67,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			</header>
 	<main>
 		<div class="container">
-			<a class="border text-dark" href="boutique.php">Retour à la boutique</a>
+			<a class="btn border text-dark" href="boutique.php">Retour à la boutique</a>
 			<center><h1>Mon Panier</h1></center>
 			<div class="container-fluid pt-5">
 				<div class="row border border-dark">
@@ -75,71 +75,71 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<center><img src="kitkat.jpg">
 						<h1>Nom Produit</h1></center>
 					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
+					<div class="col-3 align-self-center">
+						<h3 id="produitPanier">Quantité</h3>
 					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
-					</div>
-				</div>
-				<div class="row border border-dark">
-					<div class="col-6">
-						<center><img src="kitkat.jpg">
-						<h1>Nom Produit</h1></center>
-					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
-					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
 					</div>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="kitkat.jpg">
+						<center><img src="coca.png">
 						<h1>Nom Produit</h1></center>
 					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
+					<div class="col-3 align-self-center">
+						<h3>Quantité</h3>
 					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
 					</div>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="kitkat.jpg">
+						<center><img src="KinderBueno.jpg">
 						<h1>Nom Produit</h1></center>
 					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
+					<div class="col-3 align-self-center">
+						<h3>Quantité</h3>
 					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
 					</div>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="kitkat.jpg">
+						<center><img src="mug.png">
 						<h1>Nom Produit</h1></center>
 					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
+					<div class="col-3 align-self-center">
+						<h3>Quantité</h3>
 					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
 					</div>
 				</div>
 				<div class="row border border-dark">
 					<div class="col-6">
-						<center><img src="kitkat.jpg">
+						<center><img src="redbull.png">
 						<h1>Nom Produit</h1></center>
 					</div>
-					<div class="col-3">
-						<h2>Quantité</h2>
+					<div class="col-3 align-self-center">
+						<h3>Quantité</h3>
 					</div>
-					<div class="col-3">
-						<h2>Prix</h2>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
+					</div>
+				</div>
+				<div class="row border border-dark">
+					<div class="col-6">
+						<center><img src="twix.png">
+						<h1>Nom Produit</h1></center>
+					</div>
+					<div class="col-3 align-self-center">
+						<h3>Quantité</h3>
+					</div>
+					<div class="col-3 align-self-center">
+						<h3>Prix</h3>
 					</div>
 				</div>
 				<h2 id="prixTotal">Prix total</h2>

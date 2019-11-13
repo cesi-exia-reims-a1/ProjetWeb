@@ -7,11 +7,14 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
 ?>
 
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row justify-items-center">
 				<?php while($ligne=$requete->fetch()){ ?>
-					<div>
-						<div class="border border-secondary text-center m-5"><center><a href="produit.php"><img src=<?php echo $ligne['Photo_Produit']?>></a></center> <h2> <?php echo 	$ligne['Nom_Produit']?> </h2><h3> <?php echo  $ligne['Prix_Produit']?> €</h3>
-						</div>	
+					<div class="col border border-secondary text-center m-5">
+						<a class="nolink" href="produit.php">
+						<img src=<?php echo $ligne['Photo_Produit']?>>
+						<h2> <?php echo $ligne['Nom_Produit']?> </h2>
+						<h3> <?php echo $ligne['Prix_Produit']?> €</h3>
+						</a>
 					</div>
 				<?php
 				} ?>
