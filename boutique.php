@@ -1,11 +1,3 @@
-<?php
-header('Access-Control-Allow-Origin: *');
-
-header('Access-Control-Allow-Methods: GET, POST');
-
-header("Access-Control-Allow-Headers: X-Requested-With");
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,10 +95,12 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="col">
 				<div class="container-fluid">
 					<div><a class="row active text-dark" href="produit.php" id="articles"></a> 
+					<?php include("displayProduct.php"); ?>	
+					<div class="container-fluid col-3 border border-secondary m-5"><center><img src=<?php echo $ligne['Photo_Produit']?>><center> <h2> <?php echo $ligne['Nom_Produit']?> </h2><h3> <?php echo  $ligne['Prix_Produit']?> €</h3></div>
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>	
 	</main>
 	<footer>
 		
@@ -116,8 +110,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="javascript.js"></script>
-	<script src="./vendor/node_modules/jquery/dist/jquery.js"></script>
-	<script src="./apirest/ajax.js"></script>
 
 </body>
 </html>
