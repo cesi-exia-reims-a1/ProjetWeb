@@ -23,25 +23,31 @@ $jwt = JWT::encode($token, 'secretkey');
 
 
 if($decrypt){
+
+	if (isset($_SESSION['pseudo']))
+        session_destroy();
+        session_start();
+        $_SESSION['pseudo']=$ligne['Prenom_Personne'];
+
 	if ($ligne['Status_Personne'] === '1')
 	{
-		$requete->execute();
+		//$requete->execute();
 		header('Location: cesi.php');
 		exit();
 	}
 
 	if ($ligne['Status_Personne'] === 2)
 	{
-		$requete->execute();
+		//$requete->execute();
 		header('Location : admin.php');
 		exit();
 	}
-		$requete->execute();
+		//$requete->execute();
 		header('Location: index.php');
 		exit();
 }
 else{
-		$requete->execute();
+		//$requete->execute();
 		header('Location: inscription.php');
 		
 		exit();
