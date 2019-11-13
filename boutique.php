@@ -71,14 +71,15 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="col">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-1,5">
+						<div class="col-1">
 							<select class="form-control">
 			            		<option>Filtrer</option>
 			            		<option>Trier par prix croissant</option>
 			            		<option>Trier par prix décroissant</option>
 			            		<option>Trier par ...</option>
 			            	</select>
-						</div>						<div class="col-1,5">
+						</div>						
+						<div class="col-2">
 							<select class="form-control">
 			            		<option>Choisissez votre catégorie</option>
 			            		<option>Alimentation</option>

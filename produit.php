@@ -79,7 +79,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				<div class="col-4">
 					<div class="border border-danger p-3">
 						<center><h1 class="pb-5">Description</h1></center>
-						<h3 class="pb-5"> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
+						<h3 style="text-align: justify;" class="pb-5"> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
 					</div>
 					<div class="container-fluid">
 						<div class="row p-5">

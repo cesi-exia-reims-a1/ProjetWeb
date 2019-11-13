@@ -130,7 +130,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 
 		<!-- Anciens événements -->
-		<div style="text-align: center; margin-top:5em;"> <h3> Les trois derniers événements !</p> </h3>
+		<div style="text-align: center; margin-top:5em;"> <h3> Les trois derniers événements !</h3></div>
 
 		<div class="card-deck" style="margin-right:1em;margin-left:1em;">
   			<div class="card">
