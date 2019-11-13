@@ -66,47 +66,43 @@ header("Access-Control-Allow-Headers: X-Requested-With");
         			<!-- Modal -->
 				</nav>
 			</header>
-	<main class="container-fluid mt-3">
-		<div class="row mb-5">
-			<div class="col">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-1,5">
-							<select class="form-control">
-			            		<option>Filtrer</option>
-			            		<option>Trier par prix croissant</option>
-			            		<option>Trier par prix décroissant</option>
-			            		<option>Trier par ...</option>
-			            	</select>
-						</div>						<div class="col-1,5">
-							<select class="form-control">
-			            		<option>Choisissez votre catégorie</option>
-			            		<option>Alimentation</option>
-			            		<option>Goodies</option>
-			            	</select>
+		<main class="container-fluid p-5">
+			<div class="row p-5">
+				<div class="col-8">
+					<div class="border border-dark">
+						<center><img src="oasis.png" id="imageProduit"></center>
+					</div>
+					<div>
+						<center><h1>Nom du Produit</h1></center>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="border border-danger p-3">
+						<center><h1 class="pb-5">Description</h1></center>
+						<h3> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<h1>Prix</h1>
+							</div>
+							<div class="col">
+								<h1>Quantité</h1>
+							</div>
 						</div>
-						<div class="col-6 text-center">
-							<h1>Boutique</h1>
-						</div>
-						<div class="col-2">
-							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-						</div>
-						<div class="col-1 text-right">
-							<button class="btn btn-outline-success" type="submit">Rechercher</button>
-						</div>
-	        		</div>
-	        	</div>
-			</div>
-	    </div>
-		<div class="row">
-			<div class="col">
-				<div class="container-fluid">
-					<div class="row" id="articles"> 
+					</div>
+					<div>
+						<center><h2 class="border border-dark">Ajouter au panier</h2></center>
 					</div>
 				</div>
 			</div>
-		</div>		
-	</main>
+			
+
+
+
+
+
+		</main>
 	<footer>
 		
 	</footer>
@@ -117,6 +113,5 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<script type="text/javascript" src="javascript.js"></script>
 	<script src="./vendor/node_modules/jquery/dist/jquery.js"></script>
 	<script src="./apirest/ajax.js"></script>
-
 </body>
 </html>

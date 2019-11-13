@@ -25,8 +25,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<div class="bd-highlight"/><a href="boutique.php" class="nav-item nav-link active text-dark">Boutique</a></div>
 					<div class="bd-highlight"/><a href="evenement.php" class="nav-item nav-link active text-dark">Evenement</a></div>
 					<div class="bd-highlight"/><a href="galerie.php" class="nav-item nav-link active text-dark">Galerie</a></div>
-					<div class="ml-auto bd-highlight border border-secondary" id="panier" /><a href="panier.php" class="nav-item nav-link active text-dark">Panier</a></div>
-					<div class="bd-highlight"/><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a></div>
+					<div class="ml-auto bd-highlight"/><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a></div>
 					<!-- Modal -->
 					<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
@@ -66,47 +65,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
         			<!-- Modal -->
 				</nav>
 			</header>
-	<main class="container-fluid mt-3">
-		<div class="row mb-5">
-			<div class="col">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-1,5">
-							<select class="form-control">
-			            		<option>Filtrer</option>
-			            		<option>Trier par prix croissant</option>
-			            		<option>Trier par prix décroissant</option>
-			            		<option>Trier par ...</option>
-			            	</select>
-						</div>						<div class="col-1,5">
-							<select class="form-control">
-			            		<option>Choisissez votre catégorie</option>
-			            		<option>Alimentation</option>
-			            		<option>Goodies</option>
-			            	</select>
-						</div>
-						<div class="col-6 text-center">
-							<h1>Boutique</h1>
-						</div>
-						<div class="col-2">
-							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-						</div>
-						<div class="col-1 text-right">
-							<button class="btn btn-outline-success" type="submit">Rechercher</button>
-						</div>
-	        		</div>
-	        	</div>
-			</div>
-	    </div>
-		<div class="row">
-			<div class="col">
-				<div class="container-fluid">
-					<div class="row" id="articles"> 
-					</div>
-				</div>
-			</div>
-		</div>		
+	<main>
+		
 	</main>
+
 	<footer>
 		
 	</footer>
