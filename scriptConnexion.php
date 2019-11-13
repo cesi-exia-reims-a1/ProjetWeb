@@ -15,6 +15,7 @@ $requete->bindValue(':Adresse_eMail', $Adresse_eMail, PDO::PARAM_STR);
 // Exécution de la requête
 $requete->execute();
 $ligne=$requete->fetch();
+$pseudo = $ligne['Prenom_Personne'];
 $hash = $ligne['Mot_De_Passe'];
 $decrypt = password_verify($Mot_De_Passe, $hash);
 $token = array("mail" => $_POST['Adresse_eMail'], "password" => $_POST['Mot_De_Passe']);
@@ -23,11 +24,10 @@ $jwt = JWT::encode($token, 'secretkey');
 
 
 if($decrypt){
-
 	if (isset($_SESSION['pseudo']))
         session_destroy();
         session_start();
-        $_SESSION['pseudo']=$ligne['Prenom_Personne'];
+        $_SESSION['pseudo'] = $pseudo;
 
 	if ($ligne['Status_Personne'] === '1')
 	{
