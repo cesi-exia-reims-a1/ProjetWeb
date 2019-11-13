@@ -102,9 +102,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
     				</ol>
     				<div class="carousel-inner">
       				<div class="carousel-item active" id="evenement">
-        				<div class="carousel-caption d-none d-md-block">
-          				<h5>Paris Games Week</h5>
-        				</div>
+        				
       				</div>
       				<div class="carousel-item">
         				<img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/08/gamescom-2019.jpg" class="d-block w-100" alt="Gamescom">

@@ -20,7 +20,7 @@ $(function (){
         url: 'http://localhost:3000/evenement',
         success: function(evenements) {
             $.each(evenements, function(i, evenement) {
-                $evenement.append('<img src=' + evenement.URL_PHoto + ' class="d-block w-100" alt="PGW">');
+                $evenement.append('<img src=' + evenement.URL_PHoto + ' class="d-block w-100" alt="PGW"> <div class="carousel-caption d-none d-md-block"> <h5>' + evenement.Nom_Evenement + ' </h5></div>');
             });
         }
     });
