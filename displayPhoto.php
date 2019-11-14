@@ -11,7 +11,7 @@ $requete->execute();
 while($ligne=$requete->fetch()){ ?>
         <div class="card">
             <a class="nolink" href="photo.php?id_evenement=<?php echo $ligne['ID_Evenement']?>">
-            <img class="card-img-top" src=<?php echo $ligne['URL_PHoto']?> alt="photo1">
+            <img class="card-img-top" src=<?php echo $ligne['URL_Photo']?>>
         </div>
     <?php
     } ?>
