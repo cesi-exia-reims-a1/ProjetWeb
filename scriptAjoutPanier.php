@@ -16,4 +16,5 @@ $requete->execute();
 
 header('Location : boutique.php');
 exit();
+$requete->closeCursor(); 
 ?>

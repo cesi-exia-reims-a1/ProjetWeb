@@ -40,7 +40,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 							<div class="col-4">
 								<h3>Prix : <?php echo $ligne['Prix_Produit']?> €</h3>
 							</div>
-							<form action="ajoutPanier.php?id_produit=<?php echo $ligne['ID_Produit']?>" method="post">
+							<form action="scriptAjoutPanier.php?id_produit=<?php echo $ligne['ID_Produit']?>" method="post">
 				  			<div class="coL-5" id="Quantite">
 				  				<label for="Quantite"></label>
 								<h3>Quantité :</h3>
