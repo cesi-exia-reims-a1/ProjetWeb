@@ -1,0 +1,17 @@
+<?php session_start();
+
+$idPersonne = $_SESSION['id'];
+$idEvent = $_GET['id_evenement'];
+var_dump($_SESSION);
+
+$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+
+$requete = $bdd->prepare("INSERT INTO evenement VALUES (:id_evenement, :id_personne)");
+$requete->bindValue(':id_produit', $idProduct, PDO::PARAM_STR);
+$requete->bindValue(':id_evenement', $idEvent, PDO::PARAM_STR);
+
+$requete->execute();  
+
+exit();
+$requete->closeCursor(); 
+?>
