@@ -79,7 +79,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 				</div>
 				<div class="col-4">
-					<div class="border border-danger p-3">
+					<div class="border border-dark p-3">
 						<center><h1 class="pb-5">Description</h1></center>
 						<h3 style="text-align: justify;" class="pb-5"><?php echo $ligne['Descriptif_Produit']?></h3>
 					</div>
