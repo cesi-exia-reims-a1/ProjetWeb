@@ -12,7 +12,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<title>BDE</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href ="assets/css/style.css">
 </head>
 <body>
 <header>
@@ -112,6 +112,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<script type="text/javascript" src="javascript.js"></script>
 	<script src="./vendor/node_modules/jquery/dist/jquery.js"></script>
 	<script src="./apirest/ajax.js"></script>
-
+	<script type="text/javascript" src="asets/js/javascript.js"></script>
 </body>
 </html>

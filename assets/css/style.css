@@ -1,0 +1,93 @@
+#couleur{
+    background-color: #ECECEC;
+}
+.form-elegant .font-small {
+    font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+
+.form-elegant .modal-header {
+    border-bottom: none; }
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important; }
+
+.form-elegant .modal-body, .form-elegant .modal-footer {
+    font-weight: 400; }
+.taille{
+       margin-top: 1em;
+}
+
+#connexion
+{
+	display: flex;
+	margin-left: auto;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+p
+{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#articles
+{
+    margin-left: 7em;
+}
+
+#articles div
+{
+    background-color: gainsboro;
+    text-align: center;
+}
+
+#imageProduit
+{
+    height: 100%;
+    width: 50%;
+}
+
+#imgProduit
+{
+    background-color: grey;
+}
+
+#prixTotal
+{
+    text-align: right;
+}
+
+/*# = id
+. = class
+*/
+.nolink:hover{
+    text-decoration: none;  
+    color: grey; 
+}
+
+.nolink{
+    color: black;
+}
+
+.produitPanier
+{
+    font:Verdana, Geneva, sans-serif;
+    font-size:18px;
+    text-align:left;
+    height:50px;
+    vertical-align:middle;
+    line-height: 50px;
+}

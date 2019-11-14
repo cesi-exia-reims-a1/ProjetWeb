@@ -1,4 +1,5 @@
 <?php
+session_start();
 header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
@@ -12,7 +13,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<title>BDE</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href ="asset/css/style.css">
 </head>
 <body>
 <header>
@@ -85,14 +86,22 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<div class="row p-5">
 							<div class="col">
 								<h2>Prix :</h2>
+								
 							</div>
-							<div class="col">
+							
+							<div class="col" id="Quantite">
 								<h2>Quantité</h2>
+  								<label for="Quantite">Prix de l'événement</label>
+ 					 			<input type="float" class="form-control" id="Quantitet" name="Nombre_Article"  placeholder="Quantite">
 							</div>
+
 						</div>
 					</div>
 					<div>
-						<center><h2 class="border border-dark">Ajouter au panier</h2></center>
+						<center><p class="border border-dark"></center> 
+						  <input type="submit" value="ajouter au panier"/> 
+						</p>
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -113,5 +122,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<script type="text/javascript" src="javascript.js"></script>
 	<script src="./vendor/node_modules/jquery/dist/jquery.js"></script>
 	<script src="./apirest/ajax.js"></script>
+	<script type="text/javascript" src="asets/js/javascript.js"></script>
 </body>
 </html>
