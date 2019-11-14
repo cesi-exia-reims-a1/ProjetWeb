@@ -27,6 +27,7 @@
        					<input type="submit" value="S'inscrire à cet événement !" id="submitButton" />
     				</p>  
 				</div>
+				<?php include('displayPhoto.php')?>
         		</div>
 			</div>	 	
 			</main>
