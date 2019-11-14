@@ -23,7 +23,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<?php include('displayInfoEvent.php')?>
 		<div class="container">
 			<div class="card mt-4">
-				<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_PHoto'] ?> alt="événement">
+				<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_Photo'] ?>>
 				<div class="card-body">
 					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?> </h3>
 					<h4><?php echo $ligne['Prix']?> €</h4>
