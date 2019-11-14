@@ -8,9 +8,12 @@ $nombre = $_POST['Nombre_Article'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-    $requete = $bdd->prepare("INSERT INTO panier VALUES (:id_personne, :id_produit, :nombre_article");
-    $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
-    $requete->bindValue(':id_personne', $idProduct, PDO::PARAM_STR);
-    $requete->bindValue(':nombre_article', $nombre, PDO::PARAM_STR);
-    $requete->execute();  
+$requete = $bdd->prepare("INSERT INTO panier VALUES (:id_produit, :id_personne, :nombre_article)");
+$requete->bindValue(':id_produit', $idProduct, PDO::PARAM_STR);
+$requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
+$requete->bindValue(':nombre_article', $nombre, PDO::PARAM_STR);
+$requete->execute();  
+
+header('Location : boutique.php');
+exit();
 ?>
