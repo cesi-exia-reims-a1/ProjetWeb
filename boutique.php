@@ -44,9 +44,7 @@
 			</div>
 	    </div>
 		<div class="container-fluid">
-			<form method="post" action="produit.php" autocomplete="on">
 			<?php include("displayProduct.php"); ?>	
-			</form>
 		</div>
 	</main>
 	<footer>

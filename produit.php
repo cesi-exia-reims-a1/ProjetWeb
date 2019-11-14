@@ -68,24 +68,25 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				</nav>
 			</header>
 		<main class="container-fluid p-5">
+		<?php include("displayArticle.php"); ?>	
 			<div class="row p-5">
 				<div class="col-8">
 					<div class="" id="imgProduit">
-						<center><img src="mug.png" id="imageProduit"></center>
+						<center><img src=<?php echo $ligne['Photo_Produit']?> id="imageProduit"></center>
 					</div>
 					<div>
-						<center><h1 class="pt-5">Nom du Produit</h1></center>
+						<center><h1 class="pt-5"><?php echo $ligne['Nom_Produit'] ?></h1></center>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="border border-danger p-3">
 						<center><h1 class="pb-5">Description</h1></center>
-						<h3 style="text-align: justify;" class="pb-5"> Description du produit............... ..................................... ...................... ...................................... ......................................... ............................ ...........................</h3>
+						<h3 style="text-align: justify;" class="pb-5"><?php echo $ligne['Descriptif_Produit']?></h3>
 					</div>
 					<div class="container-fluid">
 						<div class="row p-5">
 							<div class="col">
-								<h2>Prix :</h2>
+								<h2>Prix : <?php echo $ligne['Prix_Produit']?> €</h2>
 								
 							</div>
 							
@@ -105,7 +106,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 				</div>
 			</div>
-			
 
 
 
