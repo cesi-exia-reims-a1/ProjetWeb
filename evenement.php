@@ -24,7 +24,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<div style="text-align: center; margin-top:1em;"> <h3> Tous nos futurs événements !</h3></div>
 
 		<div class="card-deck" style="margin-right:1em;margin-left:1em;">
-			<?php include('displayCarousselEvenement.php')?>
+			<?php include('displayCarousselEvenement.php')?>		
 		</div>
 
 		<!-- Anciens événements -->
