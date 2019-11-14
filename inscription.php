@@ -15,7 +15,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href ="assets/css/style.css">
 </head>
-<body id="inscription">
+<body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DBDBDB;">
       <a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>

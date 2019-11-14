@@ -1,5 +1,5 @@
 		<div class="container-fluid text-center">
-			<div class="row p-5 text-white">
+			<div class="row p-4 text-white">
 				<div class="col">
 					<a class="footerText" href="mentionslégales.php"> Mention légales</a>   
 				</div>

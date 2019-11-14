@@ -16,7 +16,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<link rel="stylesheet" href ="assets/css/style.css">
 	
 </head>
-<body id="couleur">
+<body>
 	<header>
 		<?php include 'navbar.php' ?>
 	</header>

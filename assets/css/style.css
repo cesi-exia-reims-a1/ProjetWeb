@@ -1,6 +1,3 @@
-#couleur{
-    background-color: #ECECEC;
-}
 .form-elegant .font-small {
     font-size: 0.8rem; }
 
@@ -85,7 +82,7 @@ p
 
 body
 {
-    background-image: linear-gradient(white, grey);
+    background-image: linear-gradient(#ADD8E6, #6495ED);
     /* Obligatoire si on veut "voir" le dégradé */
     width: all;
     height: all;
@@ -102,7 +99,7 @@ body
 
 footer
 {
-    background-color: black;
+    background-color: #F5FFFA;
 }
 
 main {
@@ -119,7 +116,7 @@ main {
 
 .footerText
 {
-    color: white;
+    color: black;
 }
 
 .logo
