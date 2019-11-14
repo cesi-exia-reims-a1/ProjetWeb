@@ -46,7 +46,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
 						</div>
 						<div class="col-1 text-right">
-							<button class="btn btn-outline-success" type="submit">Rechercher</button>
+							<button class="btn btn-outline-dark" type="submit">Rechercher</button>
 						</div>
 	        		</div>
 	        	</div>
