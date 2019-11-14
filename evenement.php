@@ -77,35 +77,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			</div>	
 		</div>
 
-		<?php include('displayAncienEvenement.php')?>
-
 		<!-- Anciens événements -->
 		<div style="text-align: center; margin-top:5em;"> <h3> Les trois derniers événements !</h3></div>
 
 		<div class="card-deck" style="margin-right:1em;margin-left:1em;">
-  			<div class="card">
-    			<img class="card-img-top" src="https://images.alphacoders.com/943/thumb-1920-943148.jpg" alt="photo1">
-    			<div class="card-body">
-      			<h5 class="card-title">titre 1</h5>
-      			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    			</div>
-			</div>
-			  
-  			<div class="card">
-    			<img class="card-img-top" src="https://images.wallpaperscraft.com/image/road_night_light_125999_1920x1080.jpg" alt="photo 2">
-    			<div class="card-body">
-      			<h5 class="card-title">titre 2</h5>
-      			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    			</div>
-			</div>
-			  
-  			<div class="card">
-    			<img class="card-img-top" src="https://images8.alphacoders.com/926/thumb-1920-926492.jpg" alt="titre 3">
-    			<div class="card-body">
-      			<h5 class="card-title">titre 3 </h5>
-      			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-				</div>
-  			</div>
+			<?php include('displayAncienEvenement.php')?>
 		</div>
 		 
 		</main>

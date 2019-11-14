@@ -6,16 +6,16 @@ $requete = $bdd->prepare("SELECT * FROM evenement WHERE Date_Evenement < (Select
 $requete->execute();
 ?>
 
-		<div class="container-fluid">
-			<div class="row justify-items-center">
 				<?php while($ligne=$requete->fetch()){ ?>
-					<div id="caseEvent" class="col border border-secondary text-center m-5">
-						<a class="nolink" href="infoEvenement.php?id_evenement=<?php echo $ligne['ID_Evenement']?>">
-						<img src=<?php echo $ligne['URL_PHoto']?>>
-						<h2> <?php echo $ligne['Nom_Evenement']?> </h2>
-						</a>
-					</div>
+					<div class="card">
+                        <a class="nolink" href="infoEvenement.php?id_evenement=<?php echo $ligne['ID_Evenement']?>">
+    			        <img class="card-img-top" src=<?php echo $ligne['URL_PHoto']?> alt="photo1">
+    			        <div class="card-body">
+      			            <h5 class="card-title"><?php echo $ligne['Nom_Evenement']?></h5>
+      			            <p class="card-text"><?php echo $ligne['Description_Evenement']?></p>
+    			        </div>
+		            </div>
 				<?php
 				} ?>
-			</div>
-		</div>
+
+        
