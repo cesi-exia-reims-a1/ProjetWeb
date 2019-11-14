@@ -70,7 +70,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<main class="container-fluid p-5">
 		<?php include("displayArticle.php"); ?>	
 			<div class="row p-5">
-				<div class="col-8">
+				<div class="col-7">
 					<div class="" id="imgProduit">
 						<center><img src=<?php echo $ligne['Photo_Produit']?> id="imageProduit"></center>
 					</div>
@@ -78,40 +78,36 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<center><h1 class="pt-5"><?php echo $ligne['Nom_Produit'] ?></h1></center>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-5">
 					<div class="border border-dark p-3">
 						<center><h1 class="pb-5">Description</h1></center>
 						<h3 style="text-align: justify;" class="pb-5"><?php echo $ligne['Descriptif_Produit']?></h3>
 					</div>
 					<div class="container-fluid">
 						<div class="row p-5">
-							<div class="col">
-								<h2>Prix : <?php echo $ligne['Prix_Produit']?> €</h2>
+							<div class="col-4">
+								<h3>Prix : <?php echo $ligne['Prix_Produit']?> €</h3>
 								
 							</div>
 							
-							<div class="col" id="Quantite">
-								<h2>Quantité</h2>
-  								<label for="Quantite">Prix de l'événement</label>
- 					 			<input type="float" class="form-control" id="Quantitet" name="Nombre_Article"  placeholder="Quantite">
+							<div class="coL-4" id="Quantite">
+								<h3>Quantité :</h3>
 							</div>
-
+							<div class="col-4">
+								<div>
+									<label class="align-self-center" for="Quantite"></label>
+ 					 				<input type="float" class="form-control" id="Quantite" name="Nombre_Article"  placeholder="Quantité">
+								</div>
+							</div>
+							<div>
+ 					 			<input class="col-12" type="submit" value="Ajouter au panier"/>
+ 					 		</div>
 						</div>
-					</div>
-					<div>
-						<center><p class="border border-dark"></center> 
-						  <input type="submit" value="ajouter au panier"/> 
-						</p>
-						</div> 
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-		</main>
+		</div>
+	</main>
 	<footer>
 		
 	</footer>
