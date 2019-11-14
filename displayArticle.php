@@ -8,4 +8,5 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
     $requete->bindValue(':id_produit', $idProduct, PDO::PARAM_STR);
     $requete->execute();  
     $ligne=$requete->fetch();
+    $requete->closeCursor(); 
 ?>

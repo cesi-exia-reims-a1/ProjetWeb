@@ -14,7 +14,7 @@ $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
 $requete->bindValue(':nombre_article', $nombre, PDO::PARAM_STR);
 $requete->execute();  
 
-header('Location : boutique.php');
+header('Location: boutique.php');
 exit();
 $requete->closeCursor(); 
 ?>
