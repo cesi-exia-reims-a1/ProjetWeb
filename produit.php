@@ -13,73 +13,25 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<title>BDE</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href ="asset/css/style.css">
+    <link rel="stylesheet" href ="assets/css/style.css">
 </head>
 <body>
-<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="index.php"><img src="https://montpellier.cesi.fr/wp-content/uploads/sites/25/2018/11/Cesi_Logo_INGENIEUR_RVB-360x213.png" width="90" height="52" alt=""></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse d-flex bd-highlight" id="navbarNavAltMarkup">
-					<div class="bd-highlight"/><a href="boutique.php" class="nav-item nav-link active text-dark">Boutique</a></div>
-					<div class="bd-highlight"/><a href="evenement.php" class="nav-item nav-link active text-dark">Evenement</a></div>
-					<div class="bd-highlight"/><a href="galerie.php" class="nav-item nav-link active text-dark">Galerie</a></div>
-					<div class="ml-auto bd-highlight border border-secondary" id="panier" /><a href="panier.php" class="nav-item nav-link active text-dark">Panier</a></div>
-					<div class="bd-highlight"/><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Connexion</a></div>
-					<!-- Modal -->
-					<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<!--Content-->
-							<div class="modal-content form-elegant">
-								<!--Header-->
-								<div class="modal-header text-center">
-									<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Connexion</strong></h3>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<!--Body-->
-								<div class="modal-body mx-4">
-									<!--Body-->
-									<form method="post" action="scriptConnexion.php" autocomplete="on">
-										<div id="login" class="md-form mb-5">
-											<input type="email" id="email" name= "Adresse_eMail" class="form-control validate">
-											<label data-error="wrong" required ="required" data-success="right" for="email">Email</label>
-										</div>
-										<div class="md-form pb-3">
-											<input type="password" id="password" name ="Mot_De_Passe" class="form-control validate">
-											<label data-error="wrong" data-success="right" required ="required" for="password">Mot de passe</label>
-										</div>
-										<div class="text-center mb-3">
-											<input type="submit" value ="login" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
-										</div>
-									</form>
-								</div>
-								<!--Footer-->
-								<div class="modal-footer mx-5 pt-3 mb-1">
-									<p class="font-small grey-text d-flex justify-content-end">Vous n'avez pas de comtpe? <a href="inscription.php" class="blue-text ml-1">S'inscrire</a></p>
-								</div>
-							</div>
-							<!--/.Content-->
-						</div>
-        			<!-- Modal -->
-				</nav>
-			</header>
+	<header>
+		<?php include 'navbar.php' ?>
+	</header>
 		<main class="container-fluid p-5">
 		<?php include("displayArticle.php"); ?>	
 			<div class="row p-5">
-				<div class="col-7">
-					<div class="" id="imgProduit">
+				<div class="col-8 p-5 border border-dark" id="imgProduit">
+					<div class="">
 						<center><img src=<?php echo $ligne['Photo_Produit']?> id="imageProduit"></center>
 					</div>
 					<div>
 						<center><h1 class="pt-5"><?php echo $ligne['Nom_Produit'] ?></h1></center>
 					</div>
 				</div>
-				<div class="col-5">
-					<div class="border border-dark p-3">
+				<div class="col-4">
+					<div class="border border-dark p-3" id="imgProduit">
 						<center><h1 class="pb-5">Description</h1></center>
 						<h3 style="text-align: justify;" class="pb-5"><?php echo $ligne['Descriptif_Produit']?></h3>
 					</div>
@@ -87,23 +39,17 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<div class="row p-5">
 							<div class="col-4">
 								<h3>Prix : <?php echo $ligne['Prix_Produit']?> €</h3>
-								
 							</div>
-							
-				  <div class="coL-4" id="Quantite">
+				  			<div class="coL-5" id="Quantite">
+				  				<label for="Quantite"></label>
 								<h3>Quantité :</h3>
+								<input type="float" id="Quantite" class="form-control" name="Nombre_Article"  placeholder="Quantité">
 							</div>
-							<div class="col-4">
-								<div>
-									<label class="align-self-center" for="Quantite"></label>
- 					 				<input type="float" class="form-control" id="Quantite" name="Nombre_Article"  placeholder="Quantité">
-								</div>
-							</div>
-							<div>
- 					 			<input class="col-12" type="submit" value="Ajouter au panier"/>
- 					 		</div>
 						</div>
 					</div>
+					<div>
+ 					 	<input type="submit" value="Ajouter au panier"/>
+ 					</div>
 				</div>
 			</div>
 		</div>

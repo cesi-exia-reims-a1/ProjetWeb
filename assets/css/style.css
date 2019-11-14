@@ -62,7 +62,8 @@ p
 
 #imgProduit
 {
-    background-color: grey;
+    background-color: white;
+    border-radius: 15px;
 }
 
 #prixTotal
@@ -82,25 +83,16 @@ p
     color: black;
 }
 
-.produitPanier
-{
-    font:Verdana, Geneva, sans-serif;
-    font-size:18px;
-    text-align:left;
-    height:50px;
-    vertical-align:middle;
-    line-height: 50px;
-}
-
 body
 {
-    background-image: linear-gradient(white, black);
+    background-image: linear-gradient(white, steelblue);
     /* Obligatoire si on veut "voir" le dégradé */
-    width:all;
+    width: all;
     height: all;
 }
 
 #caseProduit
 {
     background-color: white;
+    border-radius: 15px;
 }
