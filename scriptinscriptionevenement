@@ -11,7 +11,7 @@ $requete->bindValue(':id_produit', $idProduct, PDO::PARAM_STR);
 $requete->bindValue(':id_evenement', $idEvent, PDO::PARAM_STR);
 
 $requete->execute();  
-
+header('Location : boutique.php');
 exit();
 $requete->closeCursor(); 
 ?>
