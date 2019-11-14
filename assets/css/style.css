@@ -110,3 +110,32 @@ main {
     flex-flow: column nowrap;
     flex-grow: 1;
 }
+
+.footerText:hover
+{
+    text-decoration: none;  
+    color: skyblue;
+}
+
+.footerText
+{
+    color: white;
+}
+
+.logo
+{
+    height: 30px;
+    width: 50px;
+}
+
+.logo2
+{
+    height: 33px;
+    width: 43px;
+}
+
+.logo3
+{
+    height: 30px;
+    width: 80px;
+}
