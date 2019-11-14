@@ -85,7 +85,7 @@ p
 
 body
 {
-    background-image: linear-gradient(white, steelblue);
+    background-image: linear-gradient(white, grey);
     /* Obligatoire si on veut "voir" le dégradé */
     width: all;
     height: all;
