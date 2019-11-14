@@ -24,7 +24,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="row p-5">
 				<div class="col-8 p-5 border border-dark" id="imgProduit">
 					<div class="">
-						<center><img src=<?php echo $ligne['Photo_Produit']?> id="imageProduit"></center>
+						<center><img src=<?php echo $ligne['Photo_Produit']?>></center>
 					</div>
 					<div>
 						<center><h1 class="pt-5"><?php echo $ligne['Nom_Produit'] ?></h1></center>
