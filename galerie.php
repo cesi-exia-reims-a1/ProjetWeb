@@ -1,3 +1,12 @@
+<?php
+session_start();
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +17,8 @@
 </head>
 <body id="couleur">	
 	<header>
-  <?php include 'navbar.php' ?>
-			</header>
+    <?php include 'navbar.php' ?>
+	</header>
 		<main>
 		<div class="album py-5">
         <div class="row">

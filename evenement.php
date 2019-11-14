@@ -16,10 +16,9 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 </head>
 <body id="couleur">
 	<header>
-	<?php include 'navbar.php' ?>
-			</header>
-
-
+		<?php include 'navbar.php' ?>
+	</header>
+	
 		<main>
 		<div style="text-align: center; margin-top:1em;"> <h3> Tous nos futurs événements !</h3></div>
 

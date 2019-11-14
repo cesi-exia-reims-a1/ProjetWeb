@@ -1,5 +1,10 @@
 <?php
 session_start();
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +17,8 @@ session_start();
 </head>
 <body>
 <header>
-<?php include 'navbar.php' ?>
-			</header>
+	<?php include 'navbar.php' ?>
+</header>
 	<main>
 		<div class="container">
 			<a class="btn border text-dark" href="boutique.php">Retour à la boutique</a>
