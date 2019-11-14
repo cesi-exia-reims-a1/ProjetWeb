@@ -37,18 +37,17 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 					<div class="container-fluid">
 						<div class="row p-5">
-							<div class="col-4">
-								<h3>Prix : <?php echo $ligne['Prix_Produit']?> €</h3>
-							</div>
 							<form action="ajoutPanier.php?id_produit=<?php echo $ligne['ID_Produit']?>" method="post">
-				  			<div class="coL-5" id="Quantite">
-				  				<label for="Quantite"></label>
+							<div class="col" id="Quantite">
+								<h3>Prix : <?php echo $ligne['Prix_Produit']?> €</h3>
+								<label for="Quantite"></label>
 								<h3>Quantité :</h3>
 								<input type="float" id="Quantite" class="form-control" name="Nombre_Article"  placeholder="Quantité">
-								<input type="submit" value="Ajouter au panier"/>
+								<div class="m-5">
+								<input class="p-3" type="submit" value="Ajouter au panier"/>
+								</div>
 							</div>
 							</form>
-						</div>
 					</div>
 				</div>
 			</div>
