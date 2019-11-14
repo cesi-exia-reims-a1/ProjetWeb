@@ -92,7 +92,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 							
 							<div class="col" id="Quantite">
 								<h2>Quantité</h2>
-  								<label for="Quantite">Prix de l'événement</label>
  					 			<input type="float" class="form-control" id="Quantitet" name="Nombre_Article"  placeholder="Quantite">
 							</div>
 

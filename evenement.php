@@ -77,6 +77,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			</div>	
 		</div>
 
+		<?php include('displayAncienEvenement.php')?>
 
 		<!-- Anciens événements -->
 		<div style="text-align: center; margin-top:5em;"> <h3> Les trois derniers événements !</h3></div>
