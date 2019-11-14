@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $idPersonne = $_SESSION['id'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
