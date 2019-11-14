@@ -89,10 +89,24 @@ body
     /* Obligatoire si on veut "voir" le dégradé */
     width: all;
     height: all;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
 }
 
 #caseProduit
 {
     background-color: white;
     border-radius: 15px;
+}
+
+footer
+{
+    background-color: black;
+}
+
+main {
+    display : flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
 }
