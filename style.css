@@ -91,3 +91,16 @@ p
     vertical-align:middle;
     line-height: 50px;
 }
+
+body
+{
+    background-image: linear-gradient(white, grey);
+    /* Obligatoire si on veut "voir" le dégradé */
+    width:all;
+    height: all;
+}
+
+#caseProduit
+{
+    background-color: white;
+}
