@@ -15,6 +15,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
 						<h2> <?php echo $ligne['Nom_Produit']?> </h2>
 						<h3> <?php echo $ligne['Prix_Produit']?> €</h3>
 						</a>
+						<input type="hidden" name=> 
 					</div>
 				<?php
 				} ?>
