@@ -46,20 +46,20 @@ if($decrypt){
 	{
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
-		//$_SESSION['id'] = $id;
+		$_SESSION['id'] = $id;
 		header('Location : admin.php');
 		exit();
 	}
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
-		//$_SESSION['id'] = $id;
+		$_SESSION['id'] = $id;
 		header('Location: index.php');
 		exit();
 }
-// else{
-// 		header('Location: inscription.php');		
-// 		exit();
-// }
+else{
+		header('Location: inscription.php');		
+		exit();
+}
 //Fermeture de la connexion
 $requete->closeCursor(); 
 ?>
