@@ -51,7 +51,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
       				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     				</ol>
     				<div class="carousel-inner">
-        				<?php include("displayEvenement.php"); ?>	
+        				<?php include("displayCarousselEvenement.php"); ?>	
       				<div class="carousel-item">
         				<img src="https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/08/gamescom-2019.jpg" class="d-block w-100" alt="Gamescom">
         				<div class="carousel-caption d-none d-md-block">
