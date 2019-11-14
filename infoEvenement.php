@@ -15,13 +15,14 @@
 	<?php include 'navbar.php' ?>
 			</header>
 			<main>
+			<?php include('displayInfoEvent.php')?>
 			<div class="container">
 				<div class="card mt-4">
-          			<img class="card-img-top img-fluid" src="assets/image/e3.png" alt="événement">
+          			<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_PHoto'] ?> alt="événement">
           		<div class="card-body">
-            		<h3 class="card-title">Nom de l'événement</h3>
-            		<h4>5.00€</h4>
-            		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+            		<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?> </h3>
+            		<h4><?php echo $ligne['Prix']?> €</h4>
+            		<p class="card-text"><?php echo $ligne['Description_Evenement']?></p>
 					<p class="signin button"> 
        					<input type="submit" value="S'inscrire à cet événement !" id="submitButton" />
     				</p>  

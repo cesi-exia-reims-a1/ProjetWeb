@@ -90,7 +90,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 								
 							</div>
 							
-							<div class="coL-4" id="Quantite">
+				  <div class="coL-4" id="Quantite">
 								<h3>Quantité :</h3>
 							</div>
 							<div class="col-4">

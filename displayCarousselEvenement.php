@@ -2,7 +2,7 @@
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-$requete = $bdd->prepare("SELECT * FROM evenement");
+$requete = $bdd->prepare("SELECT * FROM evenement WHERE Date_Evenement > (Select Date( NOW())) LIMIT 3");
 $requete->execute();
    
 
