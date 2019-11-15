@@ -24,6 +24,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
             <div class="card-deck container-fluid">
 			    <?php include('displayInfoPhoto.php')?>
 		    </div>
+            <div class="container">
+                <?php include('displayCommentaire.php')?>
 			</main>
 
 			<footer class="mt-3">

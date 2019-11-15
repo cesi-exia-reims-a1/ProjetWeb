@@ -148,3 +148,16 @@ main {
 {
     text-decoration: none;   
 }
+
+.corbeille
+{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+#corbeille
+{
+    align-self: center;
+}

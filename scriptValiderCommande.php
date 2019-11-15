@@ -1,4 +1,7 @@
 <?php
+session_start();
+$idPersonne = $_SESSION['id'];
+$prixTotal = $_POST['prix_total'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
@@ -9,6 +12,10 @@ $requete->execute();
 
 $requete2 = $bdd->prepare("INSERT INTO appartenir (ID_Commande, ID_Produit, Nombre_Article) SELECT c.ID_Commande, p.ID_Produit, p.Nombre_Article FROM panier p JOIN commande c ON p.ID_Personne = c.ID_Personne");
 $requete2->execute();  
+
+$requete3 = $bdd->prepare("DELETE FROM panier WHERE ID_Personne = :id_personne");
+$requete3->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
+$requete3->execute();  
 
 header('Location: boutique.php');
 exit();
