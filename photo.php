@@ -24,17 +24,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
             <div class="card-deck container-fluid mt-4">
 			    <?php include('displayInfoPhoto.php')?>
 		    </div>
-		    <div class="container">
-		    <button class="button button-like">
-			  	<i class="fa fa-heart"></i>
-			  	<span>Like</span>
-			</button>
-			</div>
             <div class="container">
-				<h2 class="commentaire p-5">Commentaires :</h2>
+				<h2 class="commentaire p-4">Commentaires :</h2>
 				<?php include('displayCommentaire.php')?>
 				<form method="POST" action="scriptCommentaire.php">
-					<div id='heart' class='bouton'></div>
    					<textarea class="container-fluid mt-4" name="commentaire" placeholder="Entrer votre commentaire"></textarea><br />
 					<input type="hidden" value="<?php echo $idEvent ?>" name="id">
   					<input class="p-2" type="submit" value="Poster mon commentaire">

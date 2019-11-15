@@ -10,9 +10,15 @@ $requete->execute();
 
 while($ligne=$requete->fetch()){ ?>
 <div class="container card" id="photoEvent">
-    <div class="card m-5">
+    <div class="card mt-5">
         <img class="card-img-top" src=<?php echo $ligne['URL_Photo']?> alt="photo">
     </div>
+    <div class="container m-2">
+		<button class="button button-like">
+			<i class="fa fa-heart"></i>
+			<span>Like</span>
+		</button>
+	</div>
 </div>
 <?php
     } ?>
