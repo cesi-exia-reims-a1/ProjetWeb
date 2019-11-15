@@ -26,6 +26,17 @@ header("Access-Control-Allow-Headers: X-Requested-With");
           <div class="row p-5">
             <div class="col">
               <a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminboutique.php">BOUTIQUE</a>
+              <div class="container-fluid">
+                <div class="row pt-5">
+                  <div class="col pt-3">
+                    <a id="boutonAdmin" class= "border border-secondary text-center p-2" href="adminboutiqueAjout.php">Ajouter un produit</a></br>
+                    <p></p>
+                    <a id="boutonAdmin" class= "border border-secondary text-center p-2" href="adminboutiqueModification.php">Modifier un produit</a></br>
+                    <p></p>
+                    <a id="boutonAdmin" class= "border border-secondary text-center p-2" href="adminboutiqueSuppression.php">Supprimer un produit</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col"> 
               <a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminEvenement.php">EVENEMENTS</a>
@@ -36,7 +47,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
           </div>
         </div>
       <div>
-        
       </div>
 
       </main>
