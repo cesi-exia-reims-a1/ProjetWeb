@@ -10,7 +10,10 @@ $requete->execute();
 
 while($ligne=$requete->fetch()){ ?>
     <div class="row mb-5" style="background-color: white;">
-					<div class="col-6">
+			    	<div class="col-1" id="corbeille">
+			    		<a href=""><img class="corbeille" src="assets/image/corbeillePanier.png"></a>
+			    	</div>
+					<div class="col-5">
 						<center><img src=<?php echo $ligne['Photo_Produit']?>>
 						<h1><?php echo $ligne['Nom_Produit']?></h1></center>
 					</div>
