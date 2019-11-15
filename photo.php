@@ -25,7 +25,14 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			    <?php include('displayInfoPhoto.php')?>
 		    </div>
             <div class="container">
-                <?php include('displayCommentaire.php')?>
+				<h2>Commentaires:</h2>
+				<form method="POST" action="scriptCommentaire.php">
+   					<textarea name="commentaire" placeholder="Votre commentaire..."></textarea><br />
+					<input type="hidden" value="<?php echo $idEvent ?>" name="id">
+  					<input type="submit" value="Poster mon commentaire">
+				</form>
+				<?php include('displayCommentaire.php')?>
+			</div>
 			</main>
 
 			<footer class="mt-3">

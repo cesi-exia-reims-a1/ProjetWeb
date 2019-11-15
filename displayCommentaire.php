@@ -1,19 +1,19 @@
 <?php
+$id_Photo =$_GET['id_photo'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-if(isset($_POST['submit_commentaire'])) {
-    if(isset($_POST['commentaire']) AND !empty($_POST['commentaire']
-    )){
-
-    } else {
-        $c_erreur = "Le champ commentaire est vide";
-    }
-}
+$requete = $bdd->prepare("SELECT * FROM commentaire WHERE id_Photo= :id_Photo");
+$requete->bindValue(':id_Photo', $id_Photo, PDO::PARAM_STR);
+$requete->execute();  
+    
+while($ligne=$requete->fetch()){ ?>
+    <div class="card">
+        <div class="card mb-3">
+            <p><?php echo $ligne['Texte']?></p>
+        </div>
+    </div>
+<?php
+} 
+$requete->closeCursor(); 
 ?>
-<h2>Commentaires:</h2>
-<form method="POST">
-   <textarea name="commentaire" placeholder="Votre commentaire..."></textarea><br />
-   <input type="submit" value="Poster mon commentaire" name="submit_commentaire" />
-</form>
-<?php if(isset($c_erreur)) { echo $c_erreur; } ?>
