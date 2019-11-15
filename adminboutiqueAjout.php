@@ -31,7 +31,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
               <a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminEvenement.php">EVENEMENTS</a>
             </div>
             <div class="col">
-              <a id="boutonAdmin" class= "border border-secondary text-center p-5" href="">PHOTOS + COMMENTAIRES</a>
+              <a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminPhotoCommentaire.php">PHOTOS + COMMENTAIRES</a>
             </div>
           </div>
         </div>
