@@ -41,11 +41,9 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				</div>
 			</div>
 		</div>
-		<div class="row container-fluid" style="margin-top:2em;">
-			<div class="col-md-3">
-				<div class="card mb-3">
-					<?php include('displayPhoto.php')?>
-				</div>
+		<div class="py-5 container-fluid" style="margin-top:2em;">
+			<div class="row ">
+				<?php include('displayPhoto.php')?>
 			</div>
 		</div>
 	</main>
