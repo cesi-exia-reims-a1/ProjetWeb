@@ -32,6 +32,15 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						</div>
 						<div class="col">
 							<a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminPhotoCommentaire.php">PHOTOS + COMMENTAIRES</a>
+							<div class="container-fluid">
+                <div class="row pt-5">
+                  <div class="col pt-3">
+                    <a id="boutonAdmin" class= "border border-secondary text-center p-2" href="adminPhotoSuppression.php">Supprimer une photo</a></br>
+                    <p></p>
+                    <a id="boutonAdmin" class= "border border-secondary text-center p-2" href="adminCommentaireSuppression.php">Supprimer un commentaire</a></br>
+                  </div>
+                </div>
+              </div>
 						</div>
 					</div>
 				</div>
