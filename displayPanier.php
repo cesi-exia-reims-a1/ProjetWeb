@@ -23,5 +23,17 @@ while($ligne=$requete->fetch()){ ?>
 				</div>
 <?php
 } 
+
+$requete2 = $bdd->prepare("SELECT p.ID_Produit, p.ID_Personne, p.Nombre_Article, po.Prix_Produit FROM panier p JOIN produit po ON p.ID_Produit = po.ID_Produit WHERE ID_Personne = :id_personne");
+$requete2->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
+$requete2->execute();  
+$prixTotal= 0;
+while($ligne=$requete2->fetch()){
+	$prix=$ligne['Prix_Produit'];
+	$prix2=$ligne['Nombre_Article'];
+   $prixTotal += ($prix*$prix2);
+   }
+echo"<h2 id='prixTotal'>Prix total : " . $prixTotal . "</h2>";
+
 $requete->closeCursor(); 
 ?>

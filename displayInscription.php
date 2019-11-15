@@ -1,6 +1,6 @@
 <?php
 $today = date("Y-m-d");
-if($dateEvent>$today){
+if($dateEvent>$today && isset($_SESSION['pseudo'])){
     echo "<form action='scriptinscriptionevenement.php?id_evenement="?><?php echo $ligne['ID_Evenement']?><?php echo"'
     method='post'>
     <div class='col' id='evenement'>
