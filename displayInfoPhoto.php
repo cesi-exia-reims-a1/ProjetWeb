@@ -9,8 +9,8 @@ $requete->execute();
    
 
 while($ligne=$requete->fetch()){ ?>
-<div class="card">
-    <div class="card mb-3">
+<div class="container card" id="photoEvent">
+    <div class="card m-5">
         <img class="card-img-top" src=<?php echo $ligne['URL_Photo']?> alt="photo">
     </div>
 </div>
