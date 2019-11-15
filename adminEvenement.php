@@ -13,6 +13,14 @@
   <input type="Date" class="form-control" id="PriceProduct" name="Date_Evenement"  placeholder="Date de l'événement">
 </div>
 
+<!-- création bouton sélection de centre -->
+ <div id="register" >
+        <label for="centre">Centre</label>
+        <select name="ID_Centre" id="centre" class="form-control">
+         <option selected=""> -- Choisir votre centre --</option>
+         <?php include('displayCentre.php')?>
+       </select>
+     </div>
 <!-- création payant ou non -->
 
 <div id="newevent" >
