@@ -10,7 +10,7 @@
 		<div class="bd-highlight" /><a href="boutique.php" class="nav-item nav-link active text-dark">Boutique</a></div>
 	<div class="bd-highlight" /><a href="evenement.php" class="nav-item nav-link active text-dark">Evenement</a></div>
 	<div class="bd-highlight" /><a href="galerie.php" class="nav-item nav-link active text-dark">Galerie</a></div>
-	<div class="bd-highlight" /><a href="admin.php" class="nav-item nav-link active text-danger">Administration</a></div>
+	<?php include 'displayBoutonAdmin.php' ?>
 
 		<?php
 					if (isset($_SESSION['pseudo'])){?>

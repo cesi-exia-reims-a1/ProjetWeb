@@ -20,7 +20,7 @@ $ligne=$requete->fetch();
 $pseudo = $ligne['Prenom_Personne'];
 $hash = $ligne['Mot_De_Passe'];
 var_dump($hash);
-$id = $ligne['ID_Personne'];
+$id = $ligne['Status_Personne'];
 $decrypt = password_verify($Mot_De_Passe, $hash);
 var_dump($decrypt);
 $token = array("mail" => $_POST['Adresse_eMail'], "password" => $_POST['Mot_De_Passe']);
@@ -42,12 +42,12 @@ if($decrypt){
 		exit();
 	}
 
-	if ($ligne['Status_Personne'] === 2)
+	if ($ligne['Status_Personne'] === '2')
 	{
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
-		header('Location : admin.php');
+		header('Location: admin.php');
 		exit();
 	}
 		session_start();
