@@ -9,7 +9,7 @@ $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
 $requete->execute();  
 
 while($ligne=$requete->fetch()){ ?>
-    <div class="row border border-dark">
+    <div class="row mb-5" style="background-color: white;">
 					<div class="col-6">
 						<center><img src=<?php echo $ligne['Photo_Produit']?>>
 						<h1><?php echo $ligne['Nom_Produit']?></h1></center>
@@ -18,7 +18,7 @@ while($ligne=$requete->fetch()){ ?>
 						<h3 id="produitPanier">Quantité : <?php echo $ligne['Nombre_Article']?></h3>
 					</div>
 					<div class="col-3 align-self-center">
-						<h3>Prix : <?php echo $ligne['Prix_Produit']?></h3>
+						<h3>Prix unitaire : <?php echo $ligne['Prix_Produit']?>€</h3>
 					</div>
 				</div>
 <?php
@@ -33,7 +33,7 @@ while($ligne=$requete2->fetch()){
 	$prix2=$ligne['Nombre_Article'];
    $prixTotal += ($prix*$prix2);
    }
-echo"<h2 id='prixTotal'>Prix total : " . $prixTotal . "</h2>";
+echo"<h2 id='prixTotal'>Prix total : " . $prixTotal . "€</h2>";
 
 $requete->closeCursor(); 
 ?>

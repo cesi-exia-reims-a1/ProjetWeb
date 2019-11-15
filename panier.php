@@ -25,7 +25,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<center><h1>Mon Panier</h1></center>
 			<div class="container-fluid pt-5">
 				<?php include('displayPanier.php')?>
-				<h1 class="btn border border-dark p-2">Valider la commande</h1>
+				<a href="scriptValiderCommande.php" class="btn border border-dark p-2">Valider la commande</a>
 				<div class="p-5"></div>
 			</div>
 		</div>
