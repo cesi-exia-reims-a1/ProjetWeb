@@ -6,6 +6,7 @@ var_dump($_POST);
 $Nom_Produit = (isset($_POST['Nom_Produit'])) ? ($_POST['Nom_Produit']) : NULL;  $Categorie_Produit = (isset($_POST['Categorie_Produit'])) ? ($_POST['Categorie_Produit']) : NULL;
 $Prix_Produit =(isset($_POST['Prix_Produit'])) ? ($_POST['Prix_Produit']) : NULL; $Descriptif_Produit = (isset($_POST['Descriptif_Produit'])) ? ($_POST['Descriptif_Produit']) : NULL;
 $Photo_Produit =(isset($_POST['Photo_Produit'])) ? ($_POST['Photo_Produit']) : NULL;
+$ID_Centre =(isset($_POST['ID_Centre'])) ? ($_POST['ID_Centre']) : NULL;
  // Requête préparée pour empêcher les injections SQL 
 $requete = $bdd->prepare("SELECT Nom_Produit FROM produit WHERE Nom_Produit =:Nom_Produit "); 
  // Liaison des variables de la requête préparée aux variables PHP 
@@ -30,16 +31,17 @@ else
 
 	// Requête préparée pour empêcher les injections SQL 
 	
-		$requete = $bdd->prepare("INSERT INTO produit ( Nom_Produit, Categorie_Produit, Prix_Produit, Photo_Produit, Descriptif_Produit) VALUES ( :Nom_Produit, :Categorie_Produit, :Prix_Produit, :Photo_Produit, :Descriptif_Produit)"); 
+	$requete = $bdd->prepare("INSERT INTO produit ( Nom_Produit, Categorie_Produit,  Prix_Produit, Photo_Produit, Descriptif_Produit, ID_Centre) VALUES ( :Nom_Produit, :Categorie_Produit, :Prix_Produit, :Photo_Produit, :Descriptif_Produit, :ID_Centre,)"); 
 	 // Liaison des variables de la requête préparée aux variables PHP 
-		var_dump($requete);
-		$requete->bindValue(':Nom_Produit', $Nom_Produit, PDO::PARAM_STR); 
-		$requete->bindValue(':Categorie_Produit', $Categorie_Produit, PDO::PARAM_STR); 
-		$requete->bindValue(':Prix_Produit', $Prix_Produit, PDO::PARAM_STR);
-		$requete->bindValue(':Photo_Produit', $Photo_Produit, PDO::PARAM_STR);
-		$requete->bindValue(':Descriptif_Produit', $Descriptif_Produit, PDO::PARAM_STR);
+	var_dump($requete);
+	$requete->bindValue(':Nom_Produit', $Nom_Produit, PDO::PARAM_STR); 
+	$requete->bindValue(':Categorie_Produit', $Categorie_Produit, PDO::PARAM_STR); 
+	$requete->bindValue(':Prix_Produit', $Prix_Produit, PDO::PARAM_STR);
+	$requete->bindValue(':Photo_Produit', $Photo_Produit, PDO::PARAM_STR);
+	$requete->bindValue(':Descriptif_Produit', $Descriptif_Produit, PDO::PARAM_STR);
+	$requete->bindValue(':ID_Centre', $ID_Centre, PDO::PARAM_STR);
 	// Exécution de la requête 
-		$requete->execute();
-echo "produit inséré";
+	$requete->execute();
+	echo "produit inséré";
 }
 ?>

@@ -136,3 +136,15 @@ main {
     height: 30px;
     width: 80px;
 }
+
+#boutonAdmin
+{
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
+#boutonAdmin:hover
+{
+    text-decoration: none;   
+}
