@@ -8,16 +8,19 @@
 	
 </head>
 <body>
-    <div class="container">
-        <h1>Site du BDE CESI</h1>
+    <div class="container-fluid ">
         <div class="featured-img"> 
             <img src="assets/image/cesi.png" class="d-block w-100" alt="page d'acceil">
         </div>
-        <div id="register" style="margin-top:3em;">
+    </div>
+        <div id="register" class="container" style="margin-top:3em;">
             <select name="ID_Centre" id="centre" class="form-control">
                 <option selected=""> -- Choisir votre centre --</option>
                 <?php include('displayCentre.php')?>
             </select>
+            <p class="signin button"> 
+                <input type="submit" value="Valider" id="submitButton"  />
+            </p>
         </div>    
-    </div>
+    
 </body>
