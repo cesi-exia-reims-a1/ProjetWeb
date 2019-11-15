@@ -11,7 +11,7 @@ $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
 $requete->bindValue(':id_evenement', $idEvent, PDO::PARAM_STR);
 
 $requete->execute();  
-header('Location: boutique.php');
+header('Location: evenement.php');
 exit();
 
 ?>
