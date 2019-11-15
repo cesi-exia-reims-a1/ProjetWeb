@@ -35,6 +35,16 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						</div>
 					</div>
 				</div>
+				<div class="container">
+    <form method="post" action="scriptdeletearticle.php" autocomplete="on">
+      	<div id = "newarticle" class="form-group"> 
+        	<label for="Name_Produit">Nom du produit</label>
+        	<input type="text" class="form-control" id="Name_Produit"  Name = "Nom_Produit" placeholder="Nom du produit">
+      	</div>
+        <p class="addbutton"> 
+      		<input type="submit" value="Supprimer l'article"/> 
+    	</p>
+    </form>
 			</main>
 
 			<footer class="mt-3">

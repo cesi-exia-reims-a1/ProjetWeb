@@ -35,6 +35,14 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						</div>
 					</div>
 				</div>
+		<form method="post" action="scriptupdateboutique.php" autocomplete="on">
+      	<div id = "newarticle" class="form-group"> 
+        	<label for="Name_Produit">Nom du produit</label>
+        	<input type="text" class="form-control" id="Name_Produit"  Name = "Nom_Produit" placeholder="Nom du produit">
+      	</div>
+        <p class="addbutton"> 
+      		<input type="submit" value="modifier l'article"/> 
+    	</p>
 			</main>
 
 			<footer class="mt-3">

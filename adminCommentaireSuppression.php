@@ -35,6 +35,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						</div>
 					</div>
 				</div>
+
 			</main>
 
 			<footer class="mt-3">

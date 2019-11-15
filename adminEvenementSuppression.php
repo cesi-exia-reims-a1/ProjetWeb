@@ -35,6 +35,15 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						</div>
 					</div>
 				</div>
+				 <form method="post" action="scriptsuppressionevenement.php" autocomplete="on">
+      	<div id = "newarticle" class="form-group"> 
+        	<label for="Name_Evenement">Nom de l'evenement</label>
+        	<input type="text" class="form-control" id="Name_Evenement"  Name = "Nom_Evenement" placeholder="Nom de l'evenement">
+      	</div>
+        <p class="addbutton"> 
+      		<input type="submit" value="Supprimer L'évenement"/> 
+    	</p>
+    	</form>
 			</main>
 
 			<footer class="mt-3">
