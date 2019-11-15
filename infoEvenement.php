@@ -28,8 +28,9 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="card mt-4">
 				<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_Photo'] ?>>
 				<div class="card-body">
-					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?> </h3>
-					<h4><?php echo $ligne['Prix']?> €</h4>
+					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?></h3>
+					<h4><?php echo $ligne['Date_Evenement']?></h4>
+					<h5><?php echo $ligne['Prix']?> €</h5>
 					<p class="card-text"><?php echo $ligne['Description_Evenement']?></p>
 					<?php include("displayInscription.php")?>
 				</div>
