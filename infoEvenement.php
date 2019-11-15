@@ -31,13 +31,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?> </h3>
 					<h4><?php echo $ligne['Prix']?> €</h4>
 					<p class="card-text"><?php echo $ligne['Description_Evenement']?></p>
-					<form action="scriptinscriptionevenement.php?id_evenement=<?php echo $ligne['ID_Evenement']?>"
-						method="post">
-						<div class="col" id="evenement">
-							<div class="m-5">
-								<input class="p-3" type="submit" value="S'inscrire à cet événement !" />
-							</div>
-						</div>
+					<?php include("displayInscription.php")?>
 				</div>
 			</div>
 		</div>

@@ -7,4 +7,5 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
     $requete->bindValue(':id_evenement', $idEvent, PDO::PARAM_STR);
     $requete->execute();  
     $ligne=$requete->fetch();
+    $dateEvent = $ligne['Date_Evenement'];
 ?>
