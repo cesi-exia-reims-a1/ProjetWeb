@@ -31,9 +31,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<div class="col-2">
 							<?php include("displayFiltreCatégorie.php")?>
 						</div>
-						<div class="col-5 text-center">
+						<div class="col-4 text-center">
 							<h1>Boutique</h1>
 						</div>
+						<div class="col-1"></div>
 						<div class="col-2">
 							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
 						</div>
@@ -44,7 +45,19 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	        	</div>
 			</div>
 	    </div>
-			<?php include 'displayCarrouselBoutique.php' ?>
+	    <div id="carouselExampleIndicators" class="carousel slide container mb-5" data-ride="carousel" > 
+					<div class="carousel-inner">
+						<?php include 'displayCarrouselBoutique.php' ?>
+					</div>
+					<a class="fleche align-self-center carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  		<span class="sr-only">Précedente</span>
+					</a>
+					<a class="fleche align-self-center carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  		<span class="sr-only">Suivante</span>
+					</a>
+		</div>
 		<div class="container-fluid">
 			<?php include("displayProduct.php"); ?>	
 		</div>

@@ -97,6 +97,31 @@ body
     border-radius: 15px;
 }
 
+#carouselBoutique
+{
+      background-color: white;
+}
+
+.carou
+{
+  text-align: center;
+}
+
+.fleche
+{
+  color: black;
+  background-color: grey;
+  height: 50px;
+  width: 50px;
+  margin-top: auto;
+}
+
+#carouselExampleIndicators
+{
+padding-left: 50px;
+padding-right: 50px;
+}
+
 footer
 {
     background-color: #F5FFFA;
@@ -242,4 +267,10 @@ main {
 .commentaire
 {
     text-align: center;
+}
+
+.carousel
+{
+    height: 750px;
+    width: 750px;
 }
