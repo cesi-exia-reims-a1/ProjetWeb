@@ -3,14 +3,9 @@
 $idPhoto = $_GET['id_photo'];
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-$requete = $bdd->prepare("SELECT URL_Photo FROM photo WHERE ID_Photo = :id_photo");
+$requete = $bdd->prepare("SELECT * FROM personne JOIN photo ON personne.ID_Personne=photo.ID_Personne WHERE ID_Photo = :id_photo");
 $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);
 $requete->execute();
-
-$requete2 = $bdd->prepare("SELECT * FROM personne JOIN photo ON personne.ID_Personne=photo.ID_Personne WHERE ID_Photo = :id_photo");
-$requete2->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);
-$requete2->execute();
-$ligne2=$requete2->fetch();
    
 
 while($ligne=$requete->fetch()){ ?>
@@ -28,11 +23,17 @@ while($ligne=$requete->fetch()){ ?>
         <img class="card-img-top" src=<?php echo $ligne['URL_Photo']?> alt="photo">
     </div>
     <div class="container m-2">
-		<button class="button button-like">
-			<i class="fa fa-heart"></i>
-			<span>Like</span>
-		</button>
-		<div> <p> Posté par : <?php echo $ligne2['Prenom_Personne']?></p> </div>
+    	<div class="row">
+    		<div class="col-9">
+    			<button class="button button-like">
+					<i class="fa fa-heart"></i>
+					<span>Like</span>
+				</button>
+    		</div>
+    		<div class="col-3">
+    			<div> <p> Posté par : <?php echo $ligne['Prenom_Personne'],' ', $ligne['Nom_Personne']?></p> </div>
+    		</div>
+    	</div>
 	</div>
 </div>
 <?php

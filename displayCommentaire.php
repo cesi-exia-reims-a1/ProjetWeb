@@ -3,14 +3,9 @@ $id_Photo =$_GET['id_photo'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-$requete = $bdd->prepare("SELECT * FROM commentaire WHERE id_Photo= :id_Photo");
+$requete = $bdd->prepare("SELECT * FROM commentaire JOIN personne ON commentaire.ID_Personne = personne.ID_Personne WHERE id_Photo= :id_Photo");
 $requete->bindValue(':id_Photo', $id_Photo, PDO::PARAM_STR);
 $requete->execute();  
-
-$requete2 = $bdd->prepare("SELECT * FROM commentaire JOIN personne ON commentaire.ID_Personne = personne.ID_Personne WHERE id_Photo= :id_Photo");
-$requete2->bindValue(':id_Photo', $id_Photo, PDO::PARAM_STR);
-$requete2->execute();
-$ligne2=$requete2->fetch();
 
 while($ligne=$requete->fetch()){ ?>
     <div class="card mb-2">
@@ -32,7 +27,7 @@ while($ligne=$requete->fetch()){ ?>
         		</div>
         	</div>  
         </div>
-    <p id="commentaire"><?php echo 'Posté par ',$ligne2['Prenom_Personne'],' ',$ligne2['Nom_Personne']?> 
+    	<p id="commentaire"><?php echo 'Posté par ',$ligne['Prenom_Personne'],' ',$ligne['Nom_Personne']?></p>
     </div>
 <?php
 } 
