@@ -13,6 +13,7 @@ while($ligne=$requete->fetch()){ ?>
 			<?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
 			<form method="post" action="scriptsignalementphotos.php">
 				<p class="signin button mt-1 mb-1 ml-3"> 
+				<input type="hidden" value="<?php echo $idEvent ?>" name="id_event">
 	        	<input type="submit" value="Signale" name="Signale" id="submitButton"  />
 	   		 	</p>
 			</form>
