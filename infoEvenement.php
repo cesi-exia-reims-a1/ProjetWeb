@@ -33,6 +33,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<h5><?php echo $ligne['Prix']?> €</h5>
 					<form method="post" action="signalemntevenement.php">
 						<p class="signin button"> 
+							<input type="hidden" value="<?php echo $idEvent ?>" name="id_event">
 							<input type="submit" value="Signale" name="Signale" id="submitButton"  />
 						</p>
 					</form>
