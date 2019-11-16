@@ -25,11 +25,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<?php include('displayInfoPhoto.php')?>
 		</div>
 		<div class="container">
-		<form method="post" action="scriptsignalementphotos.php">
-		<p class="signin button"> 
-        <input type="submit" value="Signale" name="Signale" id="submitButton"  />
-   		 </p>
-		</form>
 	</div>
 		<div class="container">
 			<h2 class="commentaire p-4">Commentaires :</h2>

@@ -10,7 +10,15 @@ $requete->execute();
 
 while($ligne=$requete->fetch()){ ?>
 <div class="container card" id="photoEvent">
-    <div class="card mt-5">
+			<?php if(isset($_SESSION['id']) && $_SESSION['id'] == 1){ ?>
+			<form method="post" action="scriptsignalementphotos.php">
+				<p class="signin button mt-1 mb-1 ml-3"> 
+	        	<input type="submit" value="Signaler" name="Signale" id="submitButton"  />
+	   		 	</p>
+			</form>
+			<?php  
+			} ?>
+    <div class="card mt-2">
         <img class="card-img-top" src=<?php echo $ligne['URL_Photo']?> alt="photo">
     </div>
     <div class="container m-2">
