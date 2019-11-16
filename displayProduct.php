@@ -1,8 +1,8 @@
  <?php
 
-//$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-//    $requete = $bdd->prepare("SELECT * FROM produit");
+    $requete = $bdd->prepare("SELECT * FROM produit");
     $requete->execute();  
 ?>
 	<form method="POST" action="displayFiltreCatégorie.php">

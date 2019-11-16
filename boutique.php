@@ -44,32 +44,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	        	</div>
 			</div>
 	    </div>
-		<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel" > 
-				<ol class="carousel-indicators">
-			  		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			  		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			  		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-			<div class="carousel-inner">
-			  	<div class="carousel-item active">
-					<img class="d-block w-100 taille" src="https://img-new.cgtrader.com/items/911907/93247bf136/red-bull-3d-model-max-obj-fbx-mtl.jpg" alt="First slide">
-			  	</div>
-			  	<div class="carousel-item">
-					<img class="d-block w-100 taille" src="https://hdwallsource.com/img/2018/8/twix-chocolate-computer-wallpaper-62633-64609-hd-wallpapers.jpg" alt="Second slide">
-			  	</div>
-			  	<div class="carousel-item">
-					<img class="d-block w-100 taille" src="https://static.fabrik.io/yok/f4a5cbf141d8670e.jpg?auto=format&lossless=1&w=1920&h=5120&fit=max&s=ba77b1f3075dd03e15a7adf63277dd7b" alt="Third slide">
-			  	</div>
-			</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  	<span class="sr-only">Précedente</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  	<span class="sr-only">Suivante</span>
-				</a>
-		</div>
+			<?php include 'displayCarrouselBoutique.php' ?>
 		<div class="container-fluid">
 			<?php include("displayProduct.php"); ?>	
 		</div>
