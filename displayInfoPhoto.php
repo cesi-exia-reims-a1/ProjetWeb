@@ -7,8 +7,10 @@ $requete = $bdd->prepare("SELECT URL_Photo FROM photo WHERE ID_Photo = :id_photo
 $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);
 $requete->execute();
 
-$requete2 = $bdd->prepare("SELECT Nom_Personne, Prenom_Personne FROM personne JOIN photo ON personne.ID_Personne=photo.ID_Personne WHERE id_Personne=:id_Personne");
-//$requete2->execute();
+$requete2 = $bdd->prepare("SELECT * FROM personne JOIN photo ON personne.ID_Personne=photo.ID_Personne WHERE ID_Photo = :id_photo");
+$requete2->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);
+$requete2->execute();
+$ligne2=$requete2->fetch();
    
 
 while($ligne=$requete->fetch()){ ?>
@@ -30,7 +32,7 @@ while($ligne=$requete->fetch()){ ?>
 			<i class="fa fa-heart"></i>
 			<span>Like</span>
 		</button>
-		<div> <p> Posté par : <?//php echo $ligne['URL_Photo']?></p> </div>
+		<div> <p> Posté par : <?php echo $ligne2['Prenom_Personne']?></p> </div>
 	</div>
 </div>
 <?php
