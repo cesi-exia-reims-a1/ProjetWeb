@@ -5,7 +5,7 @@
 //    $requete = $bdd->prepare("SELECT * FROM produit");
     $requete->execute();  
 ?>
-
+	<form method="POST" action="displayFiltreCatégorie.php">
 		<div class="container-fluid">
 			<div class="row justify-items-center">
 				<?php while($ligne=$requete->fetch()){ ?>
@@ -20,3 +20,4 @@
 				} ?>
 			</div>
 		</div>
+	</form>
