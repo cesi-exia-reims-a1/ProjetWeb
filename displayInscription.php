@@ -7,5 +7,6 @@ if($dateEvent>$today && isset($_SESSION['pseudo'])){
         <div class='m-5'>
             <input class='p-3' type='submit' value='S inscrire à cet événement !' />
         </div>
-    </div>";
+    </div>
+    </form>";
 }

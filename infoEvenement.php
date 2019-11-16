@@ -23,22 +23,38 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<?php include 'navbar.php' ?>
 	</header>
 	<main>
-		<?php include('displayInfoEvent.php')?>
+		<?php include('displayInfoEvent.php')?>		
 		<div class="container">
-			<div class="card mt-4">
+			<?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
+					<form method="post" action="signalemntevenement.php">
+						<p class="signin button mb-0"> 
+							<input type="submit" value="Signaler" name="Signale" id="submitButton"  />
+						</p>
+					</form>
+					<?php  
+					} ?>
+			<div class="card">
 				<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_Photo'] ?>>
 				<div class="card-body">
 					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?></h3>
 					<h4><?php echo $ligne['Date_Evenement']?></h4>
 					<h5><?php echo $ligne['Prix']?> €</h5>
-					<form method="post" action="signalemntevenement.php">
-						<p class="signin button"> 
-							<input type="submit" value="Signale" name="Signale" id="submitButton"  />
-						</p>
-					</form>
 				</div>
-				<p class="card-text"><?php echo $ligne['Description_Evenement']?></p>
-				<?php include("displayInscription.php")?>
+				<p class="card-text container-fluid"><?php echo $ligne['Description_Evenement']?></p>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-5">
+							<?php include("displayInscription.php")?>
+						</div>
+						<div class="col-4"></div>
+						<div class="col-3">
+							<form method="POST" action="scriptPhotos.php">
+								<input type="hidden" value="" name="id">
+								<input class="m-5 p-3" type="submit" value="Ajouter une photo">
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
