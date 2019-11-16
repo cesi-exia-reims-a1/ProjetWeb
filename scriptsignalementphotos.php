@@ -11,6 +11,8 @@ $requete->bindValue(':Signale', $Signale, PDO::PARAM_STR);
 	// Exécution de la requête 
 $requete->execute();
 $requete->closecursor();
+header('Location: evenement.php');
+
 exit();
 
 ?>
