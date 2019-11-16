@@ -10,7 +10,7 @@ $requete->execute();
 
 while($ligne=$requete->fetch()){ ?>
 <div class="container card" id="photoEvent">
-			<?php if(isset($_SESSION['id']) && $_SESSION['id'] == 1){ ?>
+			<?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
 			<form method="post" action="scriptsignalementphotos.php">
 				<p class="signin button mt-1 mb-1 ml-3"> 
 	        	<input type="submit" value="Signaler" name="Signale" id="submitButton"  />

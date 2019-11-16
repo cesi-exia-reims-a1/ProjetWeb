@@ -20,7 +20,8 @@ $ligne=$requete->fetch();
 $pseudo = $ligne['Prenom_Personne'];
 $hash = $ligne['Mot_De_Passe'];
 var_dump($hash);
-$id = $ligne['Status_Personne'];
+$id = $ligne['ID_Personne'];
+$status = $ligne['Status_Personne'];
 $decrypt = password_verify($Mot_De_Passe, $hash);
 var_dump($decrypt);
 $token = array("mail" => $_POST['Adresse_eMail'], "password" => $_POST['Mot_De_Passe']);
@@ -38,6 +39,7 @@ if($decrypt){
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
+		$_SESSION['status'] = $status;
 		header('Location: index.php');
 		exit();
 	}
@@ -47,6 +49,7 @@ if($decrypt){
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
+		$_SESSION['status'] = $status;
 		header('Location: admin.php');
 		exit();
 	}
