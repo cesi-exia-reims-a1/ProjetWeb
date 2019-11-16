@@ -28,6 +28,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
 					<form method="post" action="signalemntevenement.php">
 						<p class="signin button mb-0"> 
+							<input type="hidden" value="<?php echo $idEvent ?>" name="id_event">
 							<input type="submit" value="Signaler" name="Signale" id="submitButton"  />
 						</p>
 					</form>
@@ -39,6 +40,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					<h3 class="card-title"><?php echo $ligne['Nom_Evenement']?></h3>
 					<h4><?php echo $ligne['Date_Evenement']?></h4>
 					<h5><?php echo $ligne['Prix']?> €</h5>
+
 				</div>
 				<p class="card-text container-fluid"><?php echo $ligne['Description_Evenement']?></p>
 				<div class="container-fluid">
