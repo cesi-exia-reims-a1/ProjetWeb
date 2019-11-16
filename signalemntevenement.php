@@ -1,6 +1,6 @@
 <?php
 
-$Destinataires = "romain.malarmey@gmail.com";
+$Destinataires = "vivientouvier@gmail.com";
 
 // Adapter dbname et mot de passe si besoin 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
@@ -20,9 +20,9 @@ $requete->bindValue(':id_evenement', $idEvent, PDO::PARAM_STR);
 $requete->execute();
 $requete->closecursor();
  
-//mail($Destinataires, "Signalement evenement", "L'évenement $idEvent a été signalé ! PS : Romain t'es un fdp");
+mail($Destinataires, "Signalement evenement", "L'évenement $idEvent a été signalé ! PS : Romain t'es un fdp");
 
-//header("location:".  $_SERVER['HTTP_REFERER']); 
+header("location:".  $_SERVER['HTTP_REFERER']); 
 exit();
 
 ?>
