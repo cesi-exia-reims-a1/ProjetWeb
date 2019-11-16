@@ -22,22 +22,22 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // On renseigne les routes  
-app.get('/produit', (req, res) => {  
+app.get('/api/produit', (req, res) => {  
       con.query("SELECT * FROM produit", function (err, result) {
             if (err) throw err;
             res.json(result);
       });
 });
 
-app.get('/centre', (req, res) => {  
-      con.query("SELECT * FROM centre", function (err, result) {
+app.get('/api/evenement', (req, res) => {  
+      con.query("SELECT * FROM evenement", function (err, result) {
             if (err) throw err;
             res.json(result);
       });
 });
 
 
-app.get('/produit/:categorie/:produit_id', (req, res) => {
+app.get('/api/photo', (req, res) => {
       
       var adr = req.params.categorie
       var adr2 = req.params.produit_id
