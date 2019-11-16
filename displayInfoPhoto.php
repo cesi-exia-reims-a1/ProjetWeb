@@ -14,7 +14,7 @@ while($ligne=$requete->fetch()){ ?>
 			<form method="post" action="scriptsignalementphotos.php">
 				<p class="signin button mt-1 mb-1 ml-3"> 
 				<input type="hidden" value="<?php echo $idPhoto ?>" name="id_photo">
-	        	<input type="submit" value="Signale" name="Signale" id="submitButton"  />
+	        	<input type="submit" value="Signaler" name="Signale" id="submitButton"  />
 	   		 	</p>
 			</form>
 			<?php  
