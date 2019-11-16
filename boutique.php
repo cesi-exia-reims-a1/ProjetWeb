@@ -24,22 +24,13 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<div class="col">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-1">
-							<select class="form-control">
-			            		<option>Filtrer</option>
-			            		<option>Trier par prix croissant</option>
-			            		<option>Trier par prix décroissant</option>
-			            		<option>Trier par ...</option>
-			            	</select>
+						<div class="col-2">
+							<?php include("displayFiltrageBoutique.php")?>
 						</div>						
 						<div class="col-2">
-							<select class="form-control">
-			            		<option>Choisissez votre catégorie</option>
-			            		<option>Alimentation</option>
-			            		<option>Goodies</option>
-			            	</select>
+							<?php include("displayFiltreCatégorie.php")?>
 						</div>
-						<div class="col-6 text-center">
+						<div class="col-5 text-center">
 							<h1>Boutique</h1>
 						</div>
 						<div class="col-2">
