@@ -1,4 +1,7 @@
 <?php
+
+$Destinataires = "romain.malarmey@gmail.com";
+
 // Adapter dbname et mot de passe si besoin 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
@@ -14,6 +17,8 @@ $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);
 	// Exécution de la requête 
 $requete->execute();
 $requete->closecursor();
+
+mail($Destinataires, "Signalement photo", "La photo $idPhoto a été signalée ! PS : Romain t'es un fdp");
 
 header("location:".  $_SERVER['HTTP_REFERER']); 
 exit();
