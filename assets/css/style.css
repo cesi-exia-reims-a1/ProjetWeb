@@ -273,3 +273,8 @@ main {
     height: 750px;
     width: 750px;
 }
+
+#commentaire
+{
+  text-align: center;
+}
