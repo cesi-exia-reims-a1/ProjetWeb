@@ -109,8 +109,7 @@ body
 
 .fleche
 {
-  color: black;
-  background-color: grey;
+  background-color: #1d8cde;
   height: 50px;
   width: 50px;
   margin-top: auto;
