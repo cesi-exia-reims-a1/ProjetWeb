@@ -4,6 +4,9 @@
 					<a class="footerText" href="mentionslégales.php"> Mention légales</a>   
 				</div>
 				<div class="col">
+					<a class="footerText" href="conditionsGeneralesDeVente.php"> Conditions générales de vente</a>   
+				</div>
+				<div class="col">
 					<a class="footerText" href="https://twitter.com/cesiingenieurs?lang=fr"><img class="logo2" src="assets/image/logoTwitter"> Twitter</a>
 				</div>
 				<div class="col">
