@@ -3,7 +3,7 @@ $id_Photo =$_GET['id_photo'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-$requete = $bdd->prepare("SELECT * FROM commentaire JOIN personne ON commentaire.ID_Personne = personne.ID_Personne WHERE id_Photo= :id_Photo");
+$requete = $bdd->prepare("SELECT * FROM commentaire JOIN personne ON commentaire.ID_Personne = personne.ID_Personne WHERE id_Photo= :id_Photo AND commentaire.Supprime = 0");
 $requete->bindValue(':id_Photo', $id_Photo, PDO::PARAM_STR);
 $requete->execute();  
 
