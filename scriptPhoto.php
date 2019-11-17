@@ -28,7 +28,7 @@ if (isset($_FILES['URL_Photo']) AND $_FILES['URL_Photo']['error'] == 0)
 						$requete->bindValue(':ID_Personne', $id, PDO::PARAM_STR);
 						$requete->execute();
 						$requete->closeCursor(); 
-                        move_uploaded_file($_FILES['URL_Photo']['tmp_name'], 'C:\wamp64\www\ProjetWeb\assets\image/' . basename($_FILES['URL_Photo']['name']));
+                        move_uploaded_file($_FILES['URL_Photo']['tmp_name'], 'assets/image/' . basename($_FILES['URL_Photo']['name']));
                 } else {
 				}
         }
