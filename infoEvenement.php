@@ -34,14 +34,14 @@ if (!isset($_GET['id_evenement'])){
 		<?php include('displayInfoEvent.php')?>		
 		<div class="container">
 			<?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
-					<form method="post" action="signalemntevenement.php">
-						<p class="signin button mb-0"> 
-							<input type="hidden" value="<?php echo $idEvent ?>" name="id_event">
-							<input type="submit" value="Signaler" name="Signaler" id="submitButton">
-						</p>
-					</form>
-					<?php  
-					} ?>
+				<form method="post" action="signalemntevenement.php">
+					<p class="signin button mb-0"> 
+						<input type="hidden" value="<?php echo $idEvent ?>" name="id_event">
+						<input type="submit" value="Signaler" name="Signaler" id="submitButton">
+					</p>
+				</form>
+				<?php  
+			} ?>
 			<div class="card">
 				<img class="card-img-top img-fluid" src=<?php echo $ligne['URL_Photo'] ?>>
 				<div class="card-body">
@@ -55,8 +55,16 @@ if (!isset($_GET['id_evenement'])){
 					<div class="row">
 						<div class="col-5">
 							<?php include("displayInscription.php")?>
-						</div>
+						</div>						   
 						<div class="col-4"></div>
+						<form method="post" action="scriptPhoto.php" autocomplete="on">
+							<div id="newevent" class="form-group">
+								<input type="file" name="URL_Photo" size=50  />
+							</div>
+							<p class="signin button"> 
+								<input type="submit" value="Postez votre photo" id="submitButton"  />
+							</p>
+						</form>
 						<?php include('displayAjoutPhoto.php')?>
 					</div>
 				</div>
@@ -84,7 +92,5 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="asets/js/javascript.js"></script>
-
 </body>
-
 </html>
