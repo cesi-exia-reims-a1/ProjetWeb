@@ -26,6 +26,7 @@ if ($requete->rowCount() > 0) {?>
   } else {
 
   }
-exit();
+
+$requete->closeCursor(); 
 
 ?>
