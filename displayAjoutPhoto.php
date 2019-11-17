@@ -6,7 +6,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
  // Récupération des données utilisateurs 
 
  $idEvent = $_GET['id_evenement'];
- $idPers = $_SESSION['id'];
+ $idPers = (isset($_SESSION['id'])) ? ($_SESSION['id']) : NULL;
  $today = date("Y-m-d");
 
  // Requête préparée pour empêcher les injections SQL 
