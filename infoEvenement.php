@@ -57,12 +57,7 @@ if (!isset($_GET['id_evenement'])){
 							<?php include("displayInscription.php")?>
 						</div>
 						<div class="col-4"></div>
-						<div class="col-3">
-							<form method="POST" action="scriptPhotos.php">
-								<input type="hidden" value="" name="id">
-								<input class="m-5 p-3" type="submit" value="Ajouter une photo">
-							</form>
-						</div>
+						<?php include('displayAjoutPhoto.php')?>
 					</div>
 				</div>
 			</div>
