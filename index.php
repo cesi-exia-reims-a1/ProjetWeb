@@ -27,7 +27,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	</header>
 
 	<main>
-		<div>
+		<div class="container-fluid">
 			<img class="d-block w-100" src="assets/image/cesi.png" alt="photoAccueil" style="margin-top:1em;">
 		</div>
 	</main>
