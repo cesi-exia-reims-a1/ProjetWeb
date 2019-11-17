@@ -29,6 +29,13 @@ app.get('/api/produit', (req, res) => {
       });
 });
 
+app.get('/api/personne', (req, res) => {  
+      con.query("SELECT * FROM personne", function (err, result) {
+            if (err) throw err;
+            res.json(result);
+      });
+});
+
 app.get('/api/evenement', (req, res) => {  
       con.query("SELECT * FROM evenement", function (err, result) {
             if (err) throw err;

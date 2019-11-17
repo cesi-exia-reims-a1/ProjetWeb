@@ -40,15 +40,64 @@ p
     text-align: justify;
 }
 
-#articles
-{
-    margin-left: 7em;
-}
-
 #articles div
 {
-    background-color: gainsboro;
+    background-color: white;
     text-align: center;
+}
+
+#articles2 div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#evenement div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#evenement img
+{
+  height: 300px;
+  width: 300px;
+}
+
+#evenement2 div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#evenement2 img
+{
+  height: 300px;
+  width: 300px;
+}
+
+#photo div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#photo img
+{
+  height: 300px;
+  width: 300px;
+}
+
+#photo2 div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#photo2 img
+{
+  height: 300px;
+  width: 300px;
 }
 
 #imageProduit
@@ -282,4 +331,9 @@ main {
 .filtreBouton
 {
   padding: 1%;
+}
+
+#adminBouton
+{
+  text-align: center;
 }
