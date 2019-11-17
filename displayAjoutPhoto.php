@@ -18,9 +18,14 @@ $requete->execute();
 
 if ($dateEvent<$today && isset($_SESSION['pseudo']) && $requete->rowCount() > 0) {?>
     <div class="col-3">
-		<form method="POST" action="scriptPhoto.php">
-			<input type="hidden" value="" name="id">
-			<input class="m-5 p-3" type="submit" value="Ajouter une photo">
+		<form method="post" action="scriptPhoto.php" autocomplete="on">
+			<div id="newevent" class="form-group">
+				<input type='hidden' name='ID_Evenement' value='<?php echo $idEvent?>'>
+				<input type="file" name="URL_Photo" size=50  />
+			</div>
+			<p class="signin button"> 
+			<input type="submit" value="Postez votre photo" id="submitButton"  />
+			</p>
 		</form>
 	</div>
     <?php

@@ -57,14 +57,6 @@ if (!isset($_GET['id_evenement'])){
 							<?php include("displayInscription.php")?>
 						</div>						   
 						<div class="col-4"></div>
-						<form method="post" action="scriptPhoto.php" autocomplete="on">
-							<div id="newevent" class="form-group">
-								<input type="file" name="URL_Photo" size=50  />
-							</div>
-							<p class="signin button"> 
-								<input type="submit" value="Postez votre photo" id="submitButton"  />
-							</p>
-						</form>
 						<?php include('displayAjoutPhoto.php')?>
 					</div>
 				</div>
