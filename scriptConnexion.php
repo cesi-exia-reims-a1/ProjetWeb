@@ -17,13 +17,15 @@ $requete->bindValue(':Adresse_eMail', $Adresse_eMail, PDO::PARAM_STR);
 // Exécution de la requête
 $requete->execute();
 $ligne=$requete->fetch();
+
 $pseudo = $ligne['Prenom_Personne'];
 $hash = $ligne['Mot_De_Passe'];
-var_dump($hash);
 $id = $ligne['ID_Personne'];
 $status = $ligne['Status_Personne'];
+$centre = $ligne['ID_Centre'];
+
 $decrypt = password_verify($Mot_De_Passe, $hash);
-var_dump($decrypt);
+
 $token = array("mail" => $_POST['Adresse_eMail'], "password" => $_POST['Mot_De_Passe']);
 $jwt = JWT::encode($token, 'secretkey');
 //var_dump($jwt);
@@ -40,6 +42,7 @@ if($decrypt){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
+		$_SESSION['centre'] = $centre;
 		header('Location: index.php');
 		exit();
 	}
@@ -50,12 +53,14 @@ if($decrypt){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
+		$_SESSION['centre'] = $centre;
 		header('Location: admin.php');
 		exit();
 	}
 		session_start();
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
+		$_SESSION['centre'] = $centre;
 		header('Location: index.php');
 		exit();
 }

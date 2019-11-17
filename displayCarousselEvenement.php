@@ -1,8 +1,11 @@
 <?php
 
+$idCentre = (isset($_SESSION['centre'])) ? ($_SESSION['centre']) : NULL;
+
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-$requete = $bdd->prepare("SELECT * FROM evenement WHERE Date_Evenement >= (Select Date( NOW())) AND Supprime = 0");
+$requete = $bdd->prepare("SELECT * FROM evenement WHERE Date_Evenement >= (Select Date( NOW())) AND Supprime = 0 AND ID_Centre = :id_centre");
+$requete->bindParam('id_centre', $idCentre, PDO::PARAM_STR);
 $requete->execute();?>
    
 
