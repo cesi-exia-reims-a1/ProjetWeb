@@ -41,11 +41,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 				</div>
 			</main>
 			<div class="container">
-				<div id="enteteCommande" class="row justify-content-center">
-					<div class="col-2 text-center"><h5>ID Commande</h5></div>
-					<div class="col-2 text-center"><h5>Prenom</h5></div>
-					<div class="col-2 text-center"><h5>Nom</h5></div>
-					<div class="col-2 text-center"><h5>Prix Total</h5></div>
+				<div id="enteteCommande" class="row justify-content-center pb-2">
+					<div class="col-2 text-center"><h5 id="enteteCommande">ID Commande</h5></div>
+					<div class="col-2 text-center"><h5 id="enteteCommande">Prenom</h5></div>
+					<div class="col-2 text-center"><h5 id="enteteCommande">Nom</h5></div>
+					<div class="col-2 text-center"><h5 id="enteteCommande">Prix Total</h5></div>
 				</div>
 			</div>
 			<div id="commande"></div>
