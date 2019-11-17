@@ -7,6 +7,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
 
  $idEvent = $_GET['id_evenement'];
  $idPers = $_SESSION['id'];
+ $today = date("Y-m-d");
 
  // Requête préparée pour empêcher les injections SQL 
 $requete = $bdd->prepare("SELECT * from participer WHERE ID_Evenement = :id_evenement AND ID_Personne = :id_personne ");
@@ -15,7 +16,7 @@ $requete->bindValue(':id_personne', $idPers, PDO::PARAM_STR);
 	// Exécution de la requête 
 $requete->execute();
 
-if ($requete->rowCount() > 0) {?>
+if ($dateEvent<$today && isset($_SESSION['pseudo']) && $requete->rowCount() > 0) {?>
     <div class="col-3">
 		<form method="POST" action="scriptPhoto.php">
 			<input type="hidden" value="" name="id">
