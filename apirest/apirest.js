@@ -45,8 +45,8 @@ app.get('/api/evenement', (req, res) => {
 
 app.get('/api/:evenement/participant', (req, res) => {  
       var adr = req.params.evenement
-      var sql = "SELECT e.Nom_Evenement, p.Prenom_Personne, p.Nom_Personne FROM participer JOIN evenement e ON participer.ID_Evenement = e.ID_Evenement JOIN personne p ON participer.ID_Personne = p.ID_Personne WHERE participer.ID_Evenement = ?"
-      con.query(sql, [adr], function (err, result) {
+      var sql = "SELECT e.Nom_Evenement, p.Prenom_Personne, p.Nom_Personne FROM participer JOIN evenement e ON participer.ID_Evenement = e.ID_Evenement JOIN personne p ON participer.ID_Personne = p.ID_Personne WHERE (participer.ID_Evenement = ?)"
+      con.query(sql, adr, function (err, result) {
             if (err) throw err;
             if(result == false){
                   res.sendStatus(404);
@@ -81,9 +81,9 @@ app.get('/api/photo', (req, res) => {
 });
 
 app.get('/api/:categorie', (req, res) => {   
-      var adr = req.params.categorie
+      var adr2 = req.params.categorie
       var sql = "SELECT * FROM produit WHERE Categorie_Produit = ?"
-      con.query(sql, [adr], function (err, result) {
+      con.query(sql, [adr2], function (err, result) {
             if (err) throw err;
             if(result == false){
                   res.sendStatus(404);
