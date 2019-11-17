@@ -35,33 +35,31 @@ while($data2 = $requete2->fetch()){
 
 
 <form action="boutique.php" method="post">
-<!-- 	<select class="filtreBouton" name="prix" onchange="this.parentNode.submit()">
-	<option value="no-prix" />-- Choisir un filtre --</option> 
+ 	<select class="filtreBouton" name="prix" onchange="this.parentNode.submit()">
+	<option value="no-prix">-- Choisir un filtre --</option> 
 	<?php
-		//if(isset($_POST['prixAsc']))
-		//foreach($prix as $prixAsc) { ?>
-		//<option <?php 
-		//	if($prixAsc['checked'])
-		//		echo 'selected';
-		//?>
-		//>
-		//<?php ////echo $prixAsc["Prix_Produit"]; ?> 
-		//<?php// } ?>
-		//<?php
-		//elseif(isset($_POST['prixDesc']))
-		//foreach($prix as $prixDesc) { ?>
-		//<option <?php 
-		//	if($prixDesc['checked'])
-		//		echo 'selected';
-		//?>
-		//>
-		//<?php //echo $prixAsc["Prix_Produit"]; ?> 
-		//<?php //} ?>
-		//<?php
-		//else
-		//	echo "0"; ?>
+		if(isset($_POST['prixAsc']))
+		foreach($prix as $prixAsc) { ?>
+		<option <?php 
+			if($prixAsc['checked'])
+				echo 'selected';
+		?>
+		>
+		<?php echo $prixAsc["Prix_Produit"];
+		} 
+		elseif(isset($_POST['prixDesc']))
+		foreach($prix as $prixDesc) { ?>
+		<option <?php 
+			if($prixDesc['checked'])
+				echo 'selected';
+		?>
+		>
+		<?php echo $prixAsc["Prix_Produit"];
+		}
+		else
+			echo "0"; ?>
 </option>
-</select> -->
+</select> 
 	<select class="filtreBouton" name="categories" onchange="this.parentNode.submit()">
 		<option value="no-cat">-- Choisir une catégorie --</option> 
 		<?php foreach($categories as $categorie) { ?>
