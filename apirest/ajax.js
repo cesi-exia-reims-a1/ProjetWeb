@@ -61,7 +61,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, photo) {
-                $photo.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletephoto.php" autocomplete="on"><p class="addbutton"> <input type="submit" value="Supprimer"/> </p></form></div></div></div></center>');
+                $photo.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletephoto.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_photo" value=' + photo.ID_Photo + '> <input type="submit" value="Supprimer" name ="ID_Photo"/> </p></form></div></div></div></center>');
             });
         }
     });
