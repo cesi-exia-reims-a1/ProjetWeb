@@ -25,11 +25,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<center><h1>Mon Panier</h1></center>
 			<div class="container-fluid pt-5">
 				<?php include('displayPanier.php')?>
-				<form action="scriptValiderCommande.php" method="post" >
-				<input type="hidden" value="<?php echo $prixTotal ?>" name="prix_total">
-				<input type="submit" value="Valider la commande">
-				</form>
-				<div class="p-5"></div>
 			</div>
 		</div>
 	</main>

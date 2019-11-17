@@ -38,5 +38,15 @@ while($ligne=$requete2->fetch()){
    }
 echo"<h2 id='prixTotal'>Prix total : " . $prixTotal . "€</h2>";
 
+if ($prixTotal !== 0){
+	?>
+<form action="scriptValiderCommande.php" method="post" >
+	<input type="hidden" value="<?php echo $prixTotal ?>" name="prix_total">
+	<input type="submit" value="Valider la commande">
+</form>
+<?php
+} else {
+}
+
 $requete->closeCursor(); 
 ?>

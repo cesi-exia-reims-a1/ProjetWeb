@@ -1,10 +1,19 @@
 <?php
 session_start();
+
+
 header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
 
 header("Access-Control-Allow-Headers: X-Requested-With");
+
+if (!isset($_GET['id_produit'])){
+	header('HTTP/1.0 404 Not Found');
+	exit;
+} else {
+}
+
 ?>
 
 <!DOCTYPE html>
