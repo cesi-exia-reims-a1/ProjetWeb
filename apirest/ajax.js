@@ -28,7 +28,7 @@ $(function (){
         dataType:'json',
         success: function(reponse2) {
             $.each(reponse2, function(i, article2) {
-                $articles2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + article2.Photo_Produit + '></div><div class="col-5 align-self-center"><h1>' + article2.Nom_Produit + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletearticle.php" autocomplete="on"><p class="addbutton"> <input type="submit" value="Supprimer"/> </p></form></div></div></div></center>');
+                $articles2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + article2.Photo_Produit + '></div><div class="col-5 align-self-center"><h1>' + article2.Nom_Produit + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletearticle.php" autocomplete="on"><p class="addbutton"> <input type="submit" value="Supprimer" name ="ID_Produit"/> </p></form></div></div></div></center>');
             });
         }
     });

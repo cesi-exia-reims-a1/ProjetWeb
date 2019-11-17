@@ -18,7 +18,7 @@ $requete->bindValue(':id_com', $idCom, PDO::PARAM_STR);
 $requete->execute();
 $requete->closecursor();
  
-mail($Destinataires, "Signalement commentaire", "Le commentaire $idCom a été signalé !\n PS : Romain t'es un fdp");
+mail($Destinataires, "Signalement commentaire", "Le commentaire $idCom a été signalé !");
 
 header("location:".  $_SERVER['HTTP_REFERER']); 
 exit();
