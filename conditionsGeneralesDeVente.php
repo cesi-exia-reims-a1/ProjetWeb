@@ -22,10 +22,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 </header>
 
 <body>
-    <div class="container">
+    <center><div class="container">
         <img src="assets/image/conditionsGeneralesDevente1.png" alt="conditionsGeneralesDevente1">
         <img src="assets/image/conditionsGeneralesDevente2.png" alt="conditionsGeneralesDevente2">
     </div>
+    </center>
 </body>
 <main>
 </main>

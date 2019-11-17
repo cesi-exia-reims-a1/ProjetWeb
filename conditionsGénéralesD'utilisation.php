@@ -20,7 +20,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 	<?php include 'navbar.php' ?>
 </header>
 <body>
-	<<h1> Conditions Générales d'utilisation</h1>
+<div class="container">
+	<h1> Conditions Générales d'utilisation</h1>
 	<p>Date : 05 / 11 / 2019 </p>
 	<p>Bienvenue sur site de vente du bde.com 
 Nous vous invitons à lire attentivement nos conditions générales de vente (les « CGV ») avant d’utiliser le site de vente du bde  et son application mobile (le « Site »). Celles-ci peuvent être amenées à évoluer pour tenir compte de la réglementation applicable.  </p>
@@ -203,6 +204,7 @@ La responsabilité civile professionnelle de site de vente du bde est couverte p
 Le directeur de la publication est Thierry Petit. 
 Hébergement : ASPSERVEUR (SARL au capital de 500 000.00 euros) situé 785 voie Antiope - ZA Athelia III - 13600 La Ciotat. 
 </p>
+</div>
 <footer>
 	<?php include 'footer.php' ?>
 </footer>

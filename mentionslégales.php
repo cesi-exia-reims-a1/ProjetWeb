@@ -36,7 +36,7 @@ Les données collectées sont destinées à l'usage de BDE reims, elles permette
 L’utilisation de cookies nécessite un consentement exprès de votre part. Vous pouvez manifester votre consentement ou vous opposer à l’utilisation des cookies en paramétrant votre dispositif de connexion de manière appropriée. Reportez-vous pour cela notamment au guide d’utilisation de votre navigateur. 
 </h5>
 <h4 class="pt-5">2- CGV : </h4></br>
-<a href="conditionsdevente.php" class="text-dark"><h4>Accédez à nos CGV</h4></a></p>
+<a href="conditionsGénéralesD'utilisation.php" class="text-dark"><h4>Accédez à nos Conditions Générales d'Utilisation</h4></a></p>
 </div>
 </body>
 <main>
