@@ -27,7 +27,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 support.bde@viacesi.fr </br>
 
-Le traitement automatisé d'informations nominatives sur le site Showroomprive.com a été déclaré auprès de la Commission Nationale de l'Informatique et des Libertés sous le numéro 1722197. </br>
+Le traitement automatisé d'informations nominatives sur le site du BDE a été déclaré auprès de la Commission Nationale de l'Informatique et des Libertés sous le numéro 1722197. </br>
 
 Notre site internet utilise des cookies. Il s’agit de petits fichiers texte enregistrés sur votre disque dur. </br>
 
