@@ -40,7 +40,15 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 				</div>
 			</main>
-				<div id="commande"></div>
+			<div class="container">
+				<div id="enteteCommande" class="row justify-content-center">
+					<div class="col-2 text-center"><h5>ID Commande</h5></div>
+					<div class="col-2 text-center"><h5>Prenom</h5></div>
+					<div class="col-2 text-center"><h5>Nom</h5></div>
+					<div class="col-2 text-center"><h5>Prix Total</h5></div>
+				</div>
+			</div>
+			<div id="commande"></div>
 			<footer class="mt-3">
 				<?php include 'footer.php' ?>
 			</footer>

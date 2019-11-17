@@ -105,7 +105,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, commande) {
-                $commande.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + commande.ID_Commande + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prix_Total + '</h5></div></div></div></center>');
+                $commande.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + commande.ID_Commande + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prix_Total + '€</h5></div></div></div></center>');
             });
         }
     });

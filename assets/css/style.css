@@ -101,6 +101,10 @@ p
     justify-content: center;
 }
 
+#enteteCommande
+{
+  background-color: white;
+}
 
 #participant div
 {
