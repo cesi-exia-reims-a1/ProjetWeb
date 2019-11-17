@@ -56,7 +56,7 @@ if (!isset($_GET['id_evenement'])){
 						<div class="col-5">
 							<?php include("displayInscription.php")?>
 						</div>						   
-						<div class="col-4"></div>
+						<div class="col-3"></div>
 						<?php include('displayAjoutPhoto.php')?>
 					</div>
 				</div>
