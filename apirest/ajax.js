@@ -7,7 +7,7 @@ $(function (){
 
     $.ajax({
         type: 'GET' ,
-        url: 'http://localhost/projetWeb/displayEvenement.php',
+        url: 'http://localhost:3000/api/produit',
         dataType:'json',
         success: function(reponse) {
             $.each(reponse.data, function(i, article) {
