@@ -7,26 +7,30 @@ $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '')
 //ici en fonction de mes valeurs je vais modifier la requete
 //Si c'est vide c'est qu'il n'y a pas de filtre
 //Si $_POST['categories'] vaut qque chose on peut filtrer
-if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] != 'no-prix'){//si on a un prix croissant + un filtre de catégorie
+if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] == 'asc'){//si on a un prix croissant + un filtre de catégorie
 	$requete = $bdd->prepare("SELECT * FROM produit WHERE Categorie_Produit = :categorie AND Prix_Produit > :prixAsc ORDER BY Prix_Produit ASC");
 	$requete->bindParam('categorie', $_POST['categories'], PDO::PARAM_STR);
-	$requete->bindParam('prixAsc', $_POST['prix']);
+	$requete->bindParam('prixAsc', $_POST['prix'], PDO::PARAM_STR);
+	$requete->execute();
 	$requete->execute();
 }
-else if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] != 'no-prix'){//si on a un prix décroissant + un filtre de catégorie
+else if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] == 'desc'){//si on a un prix décroissant + un filtre de catégorie
 	$requete = $bdd->prepare("SELECT * FROM produit WHERE Categorie_Produit = :categorie AND Prix_Produit > :prixDesc ORDER BY Prix_Produit DESC");
 	$requete->bindParam('categorie', $_POST['categories'], PDO::PARAM_STR);
-	$requete->bindParam('prixDesc', $_POST['prix']);
+	$requete->bindParam('prixDesc', $_POST['prix'], PDO::PARAM_STR);
+	$requete->execute();
 	$requete->execute();
 }
-else if(isset($_POST['prixAsc']) && $_POST['prix'] != 'no-prix'){//si on a que un filtre de prix croissant
-	$requete = $bdd->prepare("SELECT * FROM produit WHERE Prix_Produit > :prixAsc ORDER BY Prix_Produit ASC");
-	$requete->bindParam('prixAsc', $_POST['prix']);
+else if(isset($_POST['prix']) && $_POST['prix'] == 'asc'){//si on a que un filtre de prix croissant
+	$requete = $bdd->prepare("SELECT * FROM produit ORDER BY Prix_Produit ASC");
+	$requete->bindParam('prixAsc', $_POST['prix'], PDO::PARAM_STR);
+	$requete->execute();
 	$requete->execute();
 }
-else if(isset($_POST['prixDesc']) && $_POST['prix'] != 'no-prix'){//si on a que un filtre de prix décroissant
-	$requete = $bdd->prepare("SELECT * FROM produit WHERE Prix_Produit > :prixDesc ORDER BY Prix_Produit DESC");
-	$requete->bindParam('prixDesc', $_POST['prix']);
+else if(isset($_POST['prix']) && $_POST['prix'] == 'desc'){//si on a que un filtre de prix décroissant
+	$requete = $bdd->prepare("SELECT * FROM produit ORDER BY Prix_Produit DESC");
+	$requete->bindParam('prixDesc', $_POST['prix'], PDO::PARAM_STR);
+	$requete->execute();
 	$requete->execute();
 }
 else if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat'){//Si on a que un filtre de catégorie
