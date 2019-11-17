@@ -12,7 +12,7 @@ $requete->execute();
 
 $requete2 = $bdd->prepare("INSERT INTO appartenir (ID_Commande, ID_Produit, Nombre_Article) SELECT c.ID_Commande, p.ID_Produit, p.Nombre_Article FROM panier p JOIN commande c ON p.ID_Personne = c.ID_Personne");
 $requete2->execute();  
-/*
+
 $requete4 = $bdd->prepare("SELECT ID_Centre from panier JOIN Personne ON panier.ID_Personne = personne.ID_Personne WHERE panier.ID_Personne = :id_personne");
 $requete4->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
 $requete4->execute();  
@@ -95,7 +95,7 @@ switch ($ligne['ID_Centre']) {
         mail('bdeNice@gmail.com', 'Commande passée', "Une commande a été passée, prenez rendez-vous avec la personne !");
         break;
         
-}*/
+}
 
 $requete3 = $bdd->prepare("DELETE FROM panier WHERE ID_Personne = :id_personne");
 $requete3->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
