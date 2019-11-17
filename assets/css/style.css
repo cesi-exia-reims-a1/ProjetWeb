@@ -94,6 +94,28 @@ p
     text-align: center;
 }
 
+#commande div
+{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#participant div
+{
+    background-color: white;
+    text-align: center;
+}
+
+#personne div
+{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
 #photo2 img
 {
   height: 300px;

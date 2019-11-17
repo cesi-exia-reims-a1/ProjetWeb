@@ -83,7 +83,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, personne) {
-                $personne.append('<center><div class="container m-5"><div class="row"><div class="col-2 align-self-center"><h2>' + personne.Prenom_Personne + '</h2></div><div class="col-2 align-self-center"><h2>' + personne.Nom_Personne + '</h2></div><div class="col-2 align-self-center"><h2>' + personne.Status_Personne + '</h2></div><div class="col-2 align-self-center"><form method="post" action="scriptupdateevenement.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Modifier"/> </p></form></div></div></div></center>');
+                $personne.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + personne.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Status_Personne + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptupdateevenement.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Modifier"/> </p></form></div></div></div></center>');
             });
         }
     });
@@ -105,7 +105,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, commande) {
-                $commande.append('<center><div class="container m-5"><div class="row"><div class="col-2 align-self-center"><h2>' + commande.ID_Commande + '</h2></div><div class="col-2 align-self-center"><h2>' + commande.Prenom_Personne + '</h2></div><div class="col-2 align-self-center"><h2>' + commande.Nom_Personne + '</h2></div></div></div></center>');
+                $commande.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + commande.ID_Commande + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + commande.Prix_Total + '</h5></div></div></div></center>');
             });
         }
     });
