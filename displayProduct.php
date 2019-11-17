@@ -1,9 +1,43 @@
  <?php
-
+//CEST MAL IL FAUT UN FICHIER bdd.php et include ça partout plutot que c/c cette ligne
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
 
-    $requete = $bdd->prepare("SELECT * FROM produit");
-    $requete->execute();  
+//var_dump($_POST);
+
+//ici en fonction de mes valeurs je vais modifier la requete
+//Si c'est vide c'est qu'il n'y a pas de filtre
+//Si $_POST['categories'] vaut qque chose on peut filtrer
+if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] != 'no-prix'){//si on a un prix croissant + un filtre de catégorie
+	$requete = $bdd->prepare("SELECT * FROM produit WHERE Categorie_Produit = :categorie AND Prix_Produit > :prixAsc ORDER BY Prix_Produit ASC");
+	$requete->bindParam('categorie', $_POST['categories'], PDO::PARAM_STR);
+	$requete->bindParam('prixAsc', $_POST['prix']);
+	$requete->execute();
+}
+else if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat' && isset($_POST['prix']) && $_POST['prix'] != 'no-prix'){//si on a un prix décroissant + un filtre de catégorie
+	$requete = $bdd->prepare("SELECT * FROM produit WHERE Categorie_Produit = :categorie AND Prix_Produit > :prixDesc ORDER BY Prix_Produit DESC");
+	$requete->bindParam('categorie', $_POST['categories'], PDO::PARAM_STR);
+	$requete->bindParam('prixDesc', $_POST['prix']);
+	$requete->execute();
+}
+else if(isset($_POST['prixAsc']) && $_POST['prix'] != 'no-prix'){//si on a que un filtre de prix croissant
+	$requete = $bdd->prepare("SELECT * FROM produit WHERE Prix_Produit > :prixAsc ORDER BY Prix_Produit ASC");
+	$requete->bindParam('prixAsc', $_POST['prix']);
+	$requete->execute();
+}
+else if(isset($_POST['prixDesc']) && $_POST['prix'] != 'no-prix'){//si on a que un filtre de prix décroissant
+	$requete = $bdd->prepare("SELECT * FROM produit WHERE Prix_Produit > :prixDesc ORDER BY Prix_Produit DESC");
+	$requete->bindParam('prixDesc', $_POST['prix']);
+	$requete->execute();
+}
+else if(isset($_POST['categories']) && $_POST['categories'] != 'no-cat'){//Si on a que un filtre de catégorie
+	$requete = $bdd->prepare("SELECT * FROM produit WHERE Categorie_Produit = :categorie");
+	$requete->bindParam('categorie', $_POST['categories'], PDO::PARAM_STR);
+	$requete->execute();
+} else{
+	$requete = $bdd->prepare("SELECT * FROM produit");
+	$requete->execute();
+}
+
 ?>
 	<form method="POST" action="displayFiltreCatégorie.php">
 		<div class="container-fluid">

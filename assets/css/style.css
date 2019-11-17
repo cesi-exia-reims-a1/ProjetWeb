@@ -278,3 +278,9 @@ main {
 {
   text-align: center;
 }
+
+.filtreBouton
+{
+  border-radius: 1em;
+  padding: 2%;
+}

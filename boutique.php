@@ -24,11 +24,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 		<div class="row mb-5">
 			<div class="col">
 				<div class="container-fluid">
-					<div class="row">
-						<div class="col-2">
-							<?php include("displayFiltrageBoutique.php")?>
-						</div>						
-						<div class="col-2">
+					<div class="row">					
+						<div class=" col-4">
 							<?php include("displayFiltreCatégorie.php")?>
 						</div>
 						<div class="col-4 text-center">
