@@ -2,7 +2,7 @@
 
 $id = (isset($_POST['id_personne'])) ? ($_POST['id_personne']) : NULL;
 
-var_dump($id);
+
 
 ?> <div class="container">
     <form method="post" action="scriptupdatestatus.php" autocomplete="on">
@@ -18,7 +18,7 @@ var_dump($id);
 <!-- création payant ou non -->
 
 <div id="newevent" >
-  <label for= "Status">Payant</label>
+  <label for= "Status"></label>
   <select name="Status_Personne" id="Status" class="form-control">
 
    <option selected=""> -- Choisisez le status : 0 pour un étudiant, 1 pour un membre CESI, 2 pour un membre du BDE--</option>
