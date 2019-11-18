@@ -77,13 +77,13 @@ $(function (){
         }
     });
 
-    $.ajax({
+  $.ajax({
         type: 'GET' ,
         url: 'http://localhost:3000/api/personne',
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, personne) {
-                $personne.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + personne.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Status_Personne + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptupdateevenement.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Modifier"/> </p></form></div></div></div></center>');
+                $personne.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + personne.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Nom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + personne.Status_Personne + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptidstatusmodify.php" autocomplete="on"><p class="addbutton"><input type="hidden" name="id_personne" value=' + personne.ID_Personne + '> <input type="submit" value="modifier" name ="ID_Personne"/> </p></form></div></div></div></center>');
             });
         }
     });
