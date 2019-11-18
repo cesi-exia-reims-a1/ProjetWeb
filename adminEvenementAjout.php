@@ -85,10 +85,9 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 </div>   
 
 <!-- récursif -->
-<div id="newevent" >
+<div id="newevent" class="mb-4">
   <label for= "Récursif">Récursif</label>
   <select name="Recursif" id="Récursif" class="form-control">
-
    <option selected=""> -- choisisez si l'event est récursif --</option>
    <option>oui</option>
    <option>non</option>

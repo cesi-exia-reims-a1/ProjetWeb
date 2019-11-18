@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(isset($_SESSION['centre'])){
+  
+} else {
+  header("Location: http://localhost/projetWeb/choixCentre.php");
+}
 header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
@@ -23,8 +29,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
     <?php include 'navbar.php' ?>
   </header>
   <main>
-    <div class="card-deck" style="margin-right:1em;margin-left:1em; margin-top:2em;">
+    <div class="container-fluid" style="margin-right:1em;margin-left:1em; margin-top:2em;">
+      <div id="photoEvenement" class="row justify-content-center">
       <?php include('displayGalerie.php')?>
+    </div>
     </div>
   </main>
   <footer class="mt-3">

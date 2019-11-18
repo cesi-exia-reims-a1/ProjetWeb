@@ -375,3 +375,9 @@ main {
 {
   text-align: center;
 }
+
+#photoEvenement img
+{
+  height: 500px;
+  width: 700px;
+}
