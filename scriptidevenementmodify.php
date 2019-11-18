@@ -2,7 +2,6 @@
 
 
 $idEvent = (isset($_POST['id_evenement'])) ? ($_POST['id_evenement']) : NULL;
-echo $idEvent;
 
 ?> <div class="container">
     <form method="post" action="scriptupdateevenement.php" autocomplete="on">
