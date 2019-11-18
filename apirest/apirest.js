@@ -44,7 +44,7 @@ app.get('/api/evenement', (req, res) => {
 });
 
 app.get('/api/participer', (req, res) => {  
-      var sql = "SELECT e.Nom_Evenement, p.Prenom_Personne, p.Nom_Personne FROM participer JOIN evenement e ON participer.ID_Evenement = e.ID_Evenement JOIN personne p ON participer.ID_Personne = p.ID_Personne GROUP BY e.Nom_Evenement"
+      var sql = "SELECT p.ID_Personne, p.Nom_Personne, p.Prenom_Personne, e.Nom_Evenement, e.ID_Evenement FROM personne p JOIN participer pa ON p.ID_Personne = pa.ID_Personne JOIN evenement e ON e.ID_Evenement = pa.ID_Evenement GROUP BY pa.ID_Personne, pa.ID_Evenement ORDER BY e.Nom_Evenement"
       con.query(sql, function (err, result) {
             if (err) throw err;
             if(result == false){
