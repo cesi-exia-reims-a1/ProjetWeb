@@ -50,7 +50,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, evenement) {
-                $evenement2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + evenement.URL_Photo + '></div><div class="col-5 align-self-center"><h1>' + evenement.Nom_Evenement + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptupdateevenement.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Modifier"/> </p></form></div></div></div></center>');
+                $evenement2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + evenement.URL_Photo + '></div><div class="col-5 align-self-center"><h1>' + evenement.Nom_Evenement + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptidevenementmodify.php" autocomplete="on"><p class="addbutton"><input type="hidden" name="id_evenement" value=' + evenement.ID_Evenement + '> <input type="submit" value="modifier" name ="ID_Evenement"/> </p></form></div></div></div></center>');
             });
         }
     });
