@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+if(isset($_SESSION['centre'])){
+	
+} else {
+	header("Location: http://localhost/projetWeb/choixCentre.php");
+}
+
 header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
