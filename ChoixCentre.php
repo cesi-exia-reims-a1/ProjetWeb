@@ -8,7 +8,7 @@
 	
 </head>
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid mt-2">
         <div class="featured-img"> 
             <img src="assets/image/cesi.png" class="d-block w-100" alt="page d'acceil">
         </div>
