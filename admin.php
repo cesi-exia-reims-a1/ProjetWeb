@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if($_SESSION['status'] == 2 ){
+	
+} else {
+	header("Location: http://localhost/projetWeb/index.php");
+}
 header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
