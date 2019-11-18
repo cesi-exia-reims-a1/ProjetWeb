@@ -44,6 +44,11 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 					</div>
 				</div>
+				<div class="container">
+					<div id="enteteCommande" class="row justify-content-center pb-2">
+					<div class="pbTaille col-1 text-center"><h5 id="enteteCommande">Signalé</h5></div>
+					<div class="pbTaille col-1 text-center"><h5 id="enteteCommande">Supprimé</h5></div>
+				</div>
 				<div id="photo"></div>
 			</main>
 			<footer class="mt-3">

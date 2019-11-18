@@ -64,6 +64,18 @@ p
   width: 300px;
 }
 
+#participer div
+{
+  background-color: white;
+  justify-content: center;
+}
+
+#commentaire div
+{
+  background-color: white;
+  justify-content: center;
+}
+
 #like
 {
   height: 40px;
@@ -91,7 +103,7 @@ p
 #photo img
 {
   height: 300px;
-  width: 300px;
+  width: 400px;
 }
 
 #photo2 div
@@ -380,4 +392,10 @@ main {
 {
   height: 500px;
   width: 700px;
+}
+
+.pbTaille:hover
+{
+  padding-right: 15px;
+  padding-left: 15px;
 }

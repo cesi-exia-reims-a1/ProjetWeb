@@ -6,8 +6,8 @@ $(function (){
     var $evenement = $('#evenement');
     var $evenement2 = $('#evenement2');
     var $photo = $('#photo');
-    var $photo2 = $('#photo2');
-    var $participant = $('#participant');
+    var $commentaire = $('#commentaire');
+    var $participer = $('#participer');
     var $commande = $('#commande');
     var $personne = $('#personne');
 
@@ -28,7 +28,7 @@ $(function (){
         dataType:'json',
         success: function(reponse2) {
             $.each(reponse2, function(i, article2) {
-                $articles2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + article2.Photo_Produit + '></div><div class="col-5 align-self-center"><h1>' + article2.Nom_Produit + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletearticle.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_produit" value=' + article2.ID_Produit + '> <input type="submit" value="Supprimer" name ="ID_Produit"/> </p></form></div></div></div></center>');
+                $articles2.append('<center><div class="container"><div class="row"><div class="col-5"><img src=' + article2.Photo_Produit + '></div><div class="col-2 align-self-center"><h1>' + article2.Nom_Produit + '</h1></div><div class="col-1 align-self-center"><h4>' + article2.Supprime + '</h4></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletearticle.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_produit" value=' + article2.ID_Produit + '> <input type="submit" value="Supprimer" name ="ID_Produit"/> </p></form></div></div></div></center>');
             });
         }
     });
@@ -39,7 +39,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, evenement) {
-                $evenement.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + evenement.URL_Photo + '></div><div class="col-5 align-self-center"><h1>' + evenement.Nom_Evenement + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptsuppressionevenement.php" autocomplete="on"><p class="addbutton"><input type="hidden" name="id_evenement" value=' + evenement.ID_Evenement + '> <input type="submit" value="Supprimer" name ="ID_Evenement"/> </p></form></div></div></div></center>');
+                $evenement.append('<center><div class="container"><div class="row"><div class="col-5"><img src=' + evenement.URL_Photo + '></div><div class="col-2 align-self-center"><h1>' + evenement.Nom_Evenement + '</h1></div><div class="col-1 align-self-center"><h5>' + evenement.Signale + '</h5></div><div class="col-1 align-self-center"><h5>' + evenement.Supprime + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptsuppressionevenement.php" autocomplete="on"><p class="addbutton"><input type="hidden" name="id_evenement" value=' + evenement.ID_Evenement + '> <input type="submit" value="Supprimer" name ="ID_Evenement"/> </p></form></div></div></div></center>');
             });
         }
     });
@@ -61,18 +61,18 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, photo) {
-                $photo.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletephoto.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_photo" value=' + photo.ID_Photo + '> <input type="submit" value="Supprimer" name ="ID_Photo"/> </p></form></div></div></div></center>');
+                $photo.append('<center><div class="container"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-1 align-self-center"><h5>' + photo.Signale + '</h5></div><div class="col-1 align-self-center"><h5>' + photo.Supprime + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletephoto.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_photo" value=' + photo.ID_Photo + '> <input type="submit" value="Supprimer" name ="ID_Photo"/> </p></form></div></div></div></center>');
             });
         }
     });
 
     $.ajax({
         type: 'GET' ,
-        url: 'http://localhost:3000/api/photo',
+        url: 'http://localhost:3000/api/commentaire',
         dataType:'json',
         success: function(reponse) {
-            $.each(reponse, function(i, photo) {
-                $photo2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_Photo" value=' + photo.ID_Photo + '> <input type="submit" value="Supprimer" name ="ID_Photo"/> </p></form></div></div></div></center>');
+            $.each(reponse, function(i, commentaire) {
+                $commentaire.append('<center><div class="container"><div class="row"><div class="col-1 align-self-center"><h5>' + commentaire.ID_Photo + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.ID_Personne + '</h5></div><div class="col-6 align-self-center"><h5>' + commentaire.Texte + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Signale + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Supprime + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Supprimer"/> </p></form></div></div></div></center>');
             });
         }
     });
@@ -90,11 +90,11 @@ $(function (){
 
     $.ajax({
         type: 'GET' ,
-        url: 'http://localhost:3000/api/:evenement/participant',
+        url: 'http://localhost:3000/api/participer',
         dataType:'json',
         success: function(reponse) {
-            $.each(reponse, function(i, partcipant) {
-                $partcipant.append('<center><div class="container m-5"><div class="row"><div class="col-2 align-self-center"><h2>' + participant.Prenom_Personne + '</h2></div><div class="col-2 align-self-center"><h2>' + participant.Nom_Personne + '</h2></div><div class="col-2 align-self-center"><h2>' + participant.Nom_Evenement + '</h2></div></div></div></center>');
+            $.each(reponse, function(i, participer) {
+                $participer.append('<center><div class="container"><div class="row"><div class="col-2 align-self-center"><h5>' + participer.Prenom_Personne + '</h5></div><div class="col-2 align-self-center"><h5>' + participer.Nom_Personne + '</h5></div><div class="col-4 align-self-center"><h5>' + participer.Nom_Evenement + '</h5></div></div></div></center>');
             });
         }
     });

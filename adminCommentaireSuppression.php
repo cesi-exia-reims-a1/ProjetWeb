@@ -44,7 +44,16 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 					</div>
 					</div>
 				</div>
-				<div id="photo2"></div>
+				<div class="container">
+					<div id="enteteCommande" class="row pb-2">
+					<div class="col-1 text-center"><h5 id="enteteCommande">ID Photo</h5></div>
+					<div class="col-1 text-center"><h5 id="enteteCommande">ID Personne</h5></div>
+					<div class="col-6 text-center"><h5 id="enteteCommande">Texte</h5></div>
+					<div class="col-1 text-center"><h5 id="enteteCommande">Signalé</h5></div>
+					<div class="col-1 text-center"><h5 id="enteteCommande">Supprimé</h5></div>
+				</div>
+			</div>
+				<div id="commentaire"></div>
 			</main>
 			<footer class="mt-3">
 				<?php include 'footer.php' ?>
@@ -57,3 +66,28 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 			<script type="text/javascript" src="apirest/ajax.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <center>
+	<div class="container m-5">
+		<div class="row">
+			<div class="col-5">
+				<img src=' + photo.URL_Photo + '>
+			</div>
+			<div class="col-2 align-self-center">
+				<a href="displaySuppresionCommentaire.php"></a>
+			</div>
+		</div>
+	</div>
+</center>
+
+displaySuppressionCommentaire.php:
+
+				<form method="post" action="scriptdeletecommentaire.php" autocomplete="on">
+					<p class="addbutton"> 
+						<input type="hidden" name="id_Photo" value=' + photo.ID_Photo + '> 
+						<input type="submit" value="Supprimer" name ="ID_Photo"/> 
+					</p>
+				</form> -->
