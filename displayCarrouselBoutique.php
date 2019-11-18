@@ -19,7 +19,7 @@ $counter = 1;
 while($ligne=$requete->fetch()){ ?>
 		<div id="carouselBoutique" class="carousel-item<?php if($counter <= 1){echo " active"; } ?>">
 			<a class="nolink" href="produit.php?id_produit=<?php echo $ligne['ID_Produit']?>">
-				<img class="card-img-top" src=<?php echo $ligne['Photo_Produit']?>>
+				<img class="card-img-top" src=<?php echo $ligne['Photo_Produit']?> alt="imageCarousel">
 				<div class="card-body">
 					<h5 class="carou card-title"><?php echo $ligne['Nom_Produit']?></h5>
 					<p class="carou card-text"><?php echo $ligne['Descriptif_Produit']?></p>

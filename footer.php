@@ -7,13 +7,13 @@
 					<a class="footerText" href="conditionsGeneralesDeVente.php"> Conditions générales de vente</a>   
 				</div>
 				<div class="col">
-					<a class="footerText" href="https://twitter.com/cesiingenieurs?lang=fr"><img class="logo2" src="assets/image/logoTwitter"> Twitter</a>
+					<a class="footerText" href="https://twitter.com/cesiingenieurs?lang=fr"><img class="logo2" src="assets/image/logoTwitter" alt="Twitter"> Twitter</a>
 				</div>
 				<div class="col">
-					<a class="footerText" href="https://www.facebook.com/CESIingenieurs/"><img class="logo" src="assets/image/logoFacebook.png">Facebook</a>
+					<a class="footerText" href="https://www.facebook.com/CESIingenieurs/"><img class="logo" src="assets/image/logoFacebook.png" alt="Facebook">Facebook</a>
 				</div>
 				<div class="col">
-					<a class="footerText" href="https://www.cesi.fr/"><img class="logo3" src="assets/image/logoCesi.png"> Site du Cesi</a>
+					<a class="footerText" href="https://www.cesi.fr/"><img class="logo3" src="assets/image/logoCesi.png" alt="logoCesi"> Site du Cesi</a>
 				</div>
 			</div>
 		</div>
