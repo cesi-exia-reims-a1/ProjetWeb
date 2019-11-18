@@ -24,12 +24,12 @@ while($ligne=$requete->fetch()){ ?>
     </div>
     <div class="container m-2">
     	<div class="row">
-    		<?php include("displayLike.php")?>  
-			<?php include("displayNombreLike.php")?>
-    		<div class="col-3">
+    		<div class="col-8"><?php include("displayLike.php")?></div>
+    		<div class="col-4">
     			<div> <p> Posté par : <?php echo $ligne['Prenom_Personne'],' ', $ligne['Nom_Personne']?></p> </div>
     		</div>
     	</div>
+    	<div class="col-4"><?php include("displayNombreLike.php")?> Like(s)</div>
 	</div>
 </div>
 <?php

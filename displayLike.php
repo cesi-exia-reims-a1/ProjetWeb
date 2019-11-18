@@ -12,12 +12,12 @@ if(!isset($_SESSION['id'])){
     $requete2->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);
     $requete2->execute();
     if($requete2->rowCount() > 0){?>
-        <div class="col-9">   			
-	        <a href="scriptDislike.php?id_photo=<?php echo $idPhoto?>"><img class="like" src="assets/image/coeurRouge.png" alt="like"></a> 
+        <div class="">   			
+	        <a href="scriptDislike.php?id_photo=<?php echo $idPhoto?>"><img id="like" class="like" src="assets/image/coeurRouge.png" alt="like"></a> 
         </div><?php
     } else {?>
-        <div class="col-9">   			
-	        <a href="scriptLike.php?id_photo=<?php echo $idPhoto?>"><img class="like" src="assets/image/coeurBlanc.png" alt="like"></a> 
+        <div class="">   			
+	        <a href="scriptLike.php?id_photo=<?php echo $idPhoto?>"><img id="like" class="like" src="assets/image/coeurBlanc.png" alt="like"></a> 
         </div><?php
     }
 }

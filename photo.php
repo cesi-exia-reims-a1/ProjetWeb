@@ -39,7 +39,7 @@ if (!isset($_GET['id_photo'])){
 			<?php include('displayInfoPhoto.php')?>
 		</div>
 		<div class="container">
-	</div>
+		</div>
 		<div class="container">
 			<h2 class="commentaire p-4">Commentaires :</h2>
 			<?php include('displayCommentaire.php')?>
