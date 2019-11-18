@@ -15,6 +15,6 @@ $requete->bindValue(':id_personne', $id_Personne, PDO::PARAM_STR);
 $requete->execute();  
 
 header("location:" . $_SERVER['HTTP_REFERER']);
-
+exit;
 $requete->closeCursor(); 
 ?>
