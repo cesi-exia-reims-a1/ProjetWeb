@@ -1,0 +1,1 @@
+<center><a href="testDownload.php?file=ANNIV11.png">Cliquer ici pour telecharger l'image</a></center>
