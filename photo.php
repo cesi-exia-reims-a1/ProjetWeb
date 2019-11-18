@@ -43,11 +43,7 @@ if (!isset($_GET['id_photo'])){
 		<div class="container">
 			<h2 class="commentaire p-4">Commentaires :</h2>
 			<?php include('displayCommentaire.php')?>
-			<form method="POST" action="scriptCommentaire.php">
-				<textarea class="container-fluid mt-4" name="commentaire" placeholder="Entrer votre commentaire"></textarea><br />
-				<input type="hidden" value="<?php echo $idPhoto ?>" name="id">
-				<input class="p-2" type="submit" value="Poster mon commentaire">
-			</form>
+			<?php include('displayAjoutCommentaire.php')?>
 		</div>
 	</main>
 
