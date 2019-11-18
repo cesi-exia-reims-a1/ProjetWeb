@@ -1,14 +1,17 @@
 <?php
 
 $bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+$idCentre = $_SESSION['centre'];
 
 $requete = $bdd->prepare("SELECT p.Nom_Produit, p.Photo_Produit, p.Descriptif_Produit, p.ID_Produit, 
 								 COUNT(a.ID_Produit)*a.Nombre_Article as NombreDeVente 
 						  FROM produit p 
-						  JOIN appartenir a ON a.ID_Produit = p.ID_Produit  
+						  JOIN appartenir a ON a.ID_Produit = p.ID_Produit
+						  WHERE p.Supprime = 0 AND p.ID_Centre = :id_centre  
 						  GROUP BY p.Nom_Produit
 						  ORDER BY NombreDeVente DESC
 						  LIMIT 3");
+$requete->bindParam('id_centre', $idCentre, PDO::PARAM_STR);
 $requete->execute();?>
 
 <?php 
