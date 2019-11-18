@@ -72,7 +72,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, commentaire) {
-                $commentaire.append('<center><div class="container"><div class="row"><div class="col-1 align-self-center"><h5>' + commentaire.ID_Photo + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.ID_Personne + '</h5></div><div class="col-6 align-self-center"><h5>' + commentaire.Texte + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Signale + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Supprime + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"><input type="submit" value="Supprimer"/> </p></form></div></div></div></center>');
+                $commentaire.append('<center><div class="container"><div class="row"><div class="col-1 align-self-center"><h5>' + commentaire.ID_Photo + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.ID_Personne + '</h5></div><div class="col-6 align-self-center"><h5>' + commentaire.Texte + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Signale + '</h5></div><div class="col-1 align-self-center"><h5>' + commentaire.Supprime + '</h5></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_commentaire" value=' + commentaire.ID_Commentaire + '> <input type="submit" value="Supprimer" name ="ID_Commentaire"/> </p></form></div></div></div></center>');
             });
         }
     });
