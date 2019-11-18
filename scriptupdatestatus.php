@@ -11,11 +11,8 @@ $requete = $bdd->prepare("UPDATE personne SET Status_Personne = :Status_Personne
 $requete->bindValue(':Status_Personne', $Status_Personne, PDO::PARAM_STR); 
 $requete->bindValue(':ID_Personne', $id, PDO::PARAM_STR); 
 
-
-
 $requete->execute();
 header('Location: admin.php');
 exit();
-
 $requete->closeCursor(); 
-?>s
+?>
