@@ -10,8 +10,7 @@ $Recursif =(isset($_POST['Recursif'])) ? ($_POST['Recursif']) : NULL;
  $Description_Evenement =(isset($_POST['Description_Evenement'])) ? ($_POST['Description_Evenement']) : NULL;
 
 $idEvent = (isset($_POST['ID_Evenement'])) ? ($_POST['ID_Evenement']) : NULL;
-var_dump($_POST);
-var_dump($idEvent);
+
 
 $requete = $bdd->prepare("UPDATE evenement SET Nom_Evenement = :Nom_Evenement, Date_Evenement = :Date_Evenement, Payant = :Payant, Prix = :Prix, Recursif =:Recursif, Description_Evenement = :Description_Evenement WHERE ID_Evenement = :ID_Evenement"); 
 
@@ -24,7 +23,7 @@ $requete->bindValue(':Description_Evenement', $Description_Evenement, PDO::PARAM
 $requete->bindValue(':ID_Evenement', $idEvent, PDO::PARAM_STR);
 
 $requete->execute();
-
+header('Location: admin.php');
 exit();
 
 $requete->closeCursor(); 

@@ -46,6 +46,6 @@ else
 	// Exécution de la requête 
 		$requete->execute();
 		var_dump($requete);
-echo "événement inséré";
+header('Location: admin.php');
 }
 ?>

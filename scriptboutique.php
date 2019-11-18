@@ -42,6 +42,6 @@ else
 	$requete->bindValue(':ID_Centre', $ID_Centre, PDO::PARAM_STR);
 	// Exécution de la requête 
 	$requete->execute();
-	echo "produit inséré";
+	header('Location: admin.php');
 }
 ?>
