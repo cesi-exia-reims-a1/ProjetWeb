@@ -41,6 +41,14 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 						<div class="col">
 							<a id="boutonAdmin" class= "border border-secondary text-center p-5" href="adminUtilisateur.php">UTILISATEURS</a>
 						</div>
+						<form action="scriptDownload.php" method="post">
+							<select name="Fichier">
+								<option value="html">HTML</option>
+								<option value="csv">CSV</option>
+								<option value="pdf">PDF</option>
+							</select>
+							<p><input type="submit" value="Télécharger"></p>
+						</form>
 					</div>
 					</div>
 				</div>
