@@ -26,6 +26,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
     <?php include 'navbar.php' ?>
   </header>
       <main>
+        <h1 class="text-center p-2">ADMINISTRATION DU SITE</h1>
         <div id="adminBouton" class="container-fluid p-5">
           <div class="row p-5">
             <div class="col">

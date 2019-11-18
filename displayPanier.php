@@ -13,7 +13,7 @@ while($ligne=$requete->fetch()){ ?>
 			    	<div class="col-1" id="corbeille">
 			    		<a href="scriptDeleteArticlePanier.php?id_produit=<?php echo $ligne['ID_Produit']?>"><img class="corbeille" src="assets/image/corbeillePanier.png"></a>
 			    	</div>
-					<div class="col-5">
+					<div class="col-4">
 						<center><img src=<?php echo $ligne['Photo_Produit']?>>
 						<h1><?php echo $ligne['Nom_Produit']?></h1></center>
 					</div>
