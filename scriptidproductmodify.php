@@ -1,10 +1,13 @@
-      <!-- création bouton prénom -->
+<?php
 
-      <div class="container">
+
+$idProduct = (isset($_POST['id_produit'])) ? ($_POST['id_produit']) : NULL;
+
+?> <div class="container">
     <form method="post" action="scriptupdateboutique.php" autocomplete="on">
       
   <div >
-    <input type="hidden" name="ID_Produit" value=" <?php $idProduct ?>">
+    <input type="hidden" name="ID_Produit" value= <?php echo $idProduct ?>>
   </div>
 
       <!-- création bouton Prix_Produit-->
@@ -17,6 +20,7 @@
 
      
      <!-- création Bouton ajouter photo -->
+
 
 
   
@@ -42,3 +46,4 @@
       <input type="submit" value="modifier l'article"/> 
     </p>
   </form>
+</div>

@@ -17,7 +17,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, article) {
-                $articles.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + article.Photo_Produit + '></div><div class="col-5 align-self-center"><h1>' + article.Nom_Produit + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptupdateboutique.php" autocomplete="on"><p class="addbutton"> <input type="submit" value="Modifier"/> </p></div></div></div></center>');
+                $articles.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + article.Photo_Produit + '></div><div class="col-5 align-self-center"><h1>' + article.Nom_Produit + '</h1></div><div class="col-2 align-self-center"><form method="post" action="scriptidproductmodify.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_produit" value=' + article.ID_Produit + '> <input type="submit" value="modifier" name ="ID_Produit"/> </p></form></div></div></div></center>');
             });
         }
     });
@@ -72,7 +72,7 @@ $(function (){
         dataType:'json',
         success: function(reponse) {
             $.each(reponse, function(i, photo) {
-                $photo2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"> <input type="submit" value="Supprimer"/> </p></form></div></div></div></center>');
+                $photo2.append('<center><div class="container m-5"><div class="row"><div class="col-5"><img src=' + photo.URL_Photo + '></div><div class="col-2 align-self-center"><form method="post" action="scriptdeletecommentaire.php" autocomplete="on"><p class="addbutton"> <input type="hidden" name="id_Photo" value=' + photo.ID_Photo + '> <input type="submit" value="Supprimer" name ="ID_Photo"/> </p></form></div></div></div></center>');
             });
         }
     });
