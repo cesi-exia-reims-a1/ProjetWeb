@@ -262,7 +262,7 @@ main {
     align-self: center;
 }
 
-.button-like {
+/* .button-like {
   border: 2px solid black-gray;
   background-color: transparent;
   text-decoration: none;
@@ -275,6 +275,11 @@ main {
   transition: all ease 0.4s;
 
   span {
+    margin-left: 0.5rem;
+  } */
+  .like{
+    max-width: 5%;
+    height: auto;
     margin-left: 0.5rem;
   }
 

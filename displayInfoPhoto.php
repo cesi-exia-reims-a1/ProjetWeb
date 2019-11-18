@@ -24,11 +24,8 @@ while($ligne=$requete->fetch()){ ?>
     </div>
     <div class="container m-2">
     	<div class="row">
-    		<div class="col-9">
-    			<button class="button button-like">
-					<i class="fa fa-heart"></i>
-					<span>Like</span>
-				</button>
+    		<div class="col-9">   			
+					<a href="scriptLike.php"><img class="like" src="assets/image/coeurBlanc.png" alt="like"></a> 
     		</div>
     		<div class="col-3">
     			<div> <p> Posté par : <?php echo $ligne['Prenom_Personne'],' ', $ligne['Nom_Personne']?></p> </div>
