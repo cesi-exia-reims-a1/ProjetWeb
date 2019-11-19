@@ -46,7 +46,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
         </div>
               <!-- création bouton nom_Produit -->
   <div class="container">
-    <form method="post" action="scriptboutique.php" autocomplete="on">
+    <form method="post" action="scriptboutique.php" autocomplete="on" enctype="multipart/form-data">
       <div id = "newarticle" class="form-group"> 
         <label for="Name_Produit">Nom du produit</label>
         <input type="text" class="form-control" id="Name_Produit"  Name = "Nom_Produit" placeholder="Nom du produit">
@@ -65,7 +65,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
      <!-- création Bouton ajouter photo -->
 
     <div id="newarticle" class="form-group">
-         <input type="file" name="Photo_Produit" size=50  />
+         <input type="file" name="Photo_Produit" size=50>
         </div>
   
     <!-- création Descriptif produit -->

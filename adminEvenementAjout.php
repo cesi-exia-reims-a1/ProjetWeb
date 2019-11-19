@@ -45,7 +45,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
           </div>
         </div>
         <div class="container">
-        <form method="post" action="scriptEvenement.php" autocomplete="on">
+        <form method="post" action="scriptEvenement.php" autocomplete="on" enctype="multipart/form-data">
  <!-- création bouton Nom-événement -->
  <div id = "newevent" class="form-group"> 
   <label for="Nom_Evenement">Nom du produit</label>
@@ -97,7 +97,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 <!-- création Bouton ajouter photo -->
 <div id="newevent" class="form-group">
- <input type="file" name="URL_PHoto" size=50  />
+ <input type="file" name="Photo_Produit" size=50  />
 </div>
 
 <div id="descriptionevent" class="form-group">
