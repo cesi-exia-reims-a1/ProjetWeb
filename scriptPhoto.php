@@ -2,7 +2,7 @@
 
 session_start();
 // Adapter dbname et mot de passe si besoin 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
  // Récupération des données utilisateurs 
 
 $URL_Photo = ("assets/image/".$_FILES['URL_Photo']['name']); 

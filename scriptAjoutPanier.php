@@ -6,7 +6,7 @@ $idPersonne = $_SESSION['id'];
 $idProduct = $_GET['id_produit'];
 $nombre = $_POST['Nombre_Article'];
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("INSERT INTO panier VALUES (:id_produit, :id_personne, :nombre_article)");
 $requete->bindValue(':id_produit', $idProduct, PDO::PARAM_STR);

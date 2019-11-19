@@ -2,7 +2,7 @@
 
 $idPersonne = $_SESSION['id'];
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("SELECT * FROM panier JOIN produit ON panier.ID_Produit = produit.ID_Produit WHERE ID_Personne = :id_personne");
 $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);

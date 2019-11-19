@@ -2,9 +2,9 @@
 
 <?php
 // Adapter dbname et mot de passe si besoin 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
  // Récupération des données utilisateurs 
-  $Categorie_Produit = (isset($_POST['Categorie_Produit'])) ? ($_POST['Categorie_Produit']) : NULL;
+$Categorie_Produit = (isset($_POST['Categorie_Produit'])) ? ($_POST['Categorie_Produit']) : NULL;
 $Prix_Produit =(isset($_POST['Prix_Produit'])) ? ($_POST['Prix_Produit']) : NULL; $Descriptif_Produit = (isset($_POST['Descriptif_Produit'])) ? ($_POST['Descriptif_Produit']) : NULL;
 
 $idProduct = (isset($_POST['ID_Produit'])) ? ($_POST['ID_Produit']) : NULL;

@@ -3,7 +3,7 @@ session_start();
 $idPersonne = $_SESSION['id'];
 $idPhoto = $_GET['id_photo'];
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("DELETE FROM like_photo WHERE ID_Photo = :id_photo AND ID_Personne = :id_personne");
 $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);

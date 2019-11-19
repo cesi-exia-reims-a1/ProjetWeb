@@ -1,6 +1,5 @@
 <?php
-// Adapter dbname et mot de passe si besoin 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
  // Récupération des données utilisateurs 
 
 $idCom = isset($_POST['id_commentaire']) ? ($_POST['id_commentaire']) : NULL;

@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 $requete = $bdd->prepare("SELECT DISTINCT Categorie_Produit FROM produit");
 $requete->execute();  
 

@@ -1,7 +1,7 @@
 <?php
 
 $idPhoto = $_GET['id_photo'];
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("SELECT * FROM personne JOIN photo ON personne.ID_Personne=photo.ID_Personne WHERE ID_Photo = :id_photo");
 $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);

@@ -1,6 +1,6 @@
 <?php
 // Adapter dbname et mot de passe si besoin 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
  // Récupération des données utilisateurs 
 $Nom_Personne = (isset($_POST['Nom_Personne'])) ? ($_POST['Nom_Personne']) : NULL;  $Prenom_Personne = (isset($_POST['Prenom_Personne'])) ? ($_POST['Prenom_Personne']) : NULL;
 $Adresse_eMail =(isset($_POST['Adresse_eMail'])) ? ($_POST['Adresse_eMail']) : NULL; $Mot_De_Passe = (isset($_POST['Mot_De_Passe'])) ? ($_POST['Mot_De_Passe']) : NULL;

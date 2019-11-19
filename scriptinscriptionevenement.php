@@ -4,7 +4,7 @@ $idPersonne = $_SESSION['id'];
 $idEvent = $_GET['id_evenement'];
 
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("INSERT INTO participer VALUES (:id_evenement, :id_personne)");
 $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);

@@ -1,6 +1,6 @@
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 $idCentre = $_SESSION['centre'];
 
 $requete = $bdd->prepare("SELECT p.Nom_Produit, p.Photo_Produit, p.Descriptif_Produit, p.ID_Produit, 

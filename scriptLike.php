@@ -4,7 +4,7 @@ session_start();
 $idPersonne = $_SESSION['id'];
 $idPhoto = $_GET['id_photo'];
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("INSERT INTO like_photo VALUES (:id_photo, :id_personne)");
 $requete->bindValue(':id_photo', $idPhoto, PDO::PARAM_STR);

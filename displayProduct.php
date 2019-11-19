@@ -1,7 +1,7 @@
  <?php
 
 //CEST MAL IL FAUT UN FICHIER bdd.php et include ça partout plutot que c/c cette ligne
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $idCentre = $_SESSION['centre'];
 

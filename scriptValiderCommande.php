@@ -3,7 +3,7 @@ session_start();
 $idPersonne = $_SESSION['id'];
 $prixTotal = $_POST['prix_total'];
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 
 $requete = $bdd->prepare("INSERT INTO commande (ID_Personne, Prix_Total) VALUES (:id_personne, :prix_total)");
 $requete->bindValue(':id_personne', $idPersonne, PDO::PARAM_STR);

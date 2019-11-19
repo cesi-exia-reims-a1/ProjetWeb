@@ -1,7 +1,7 @@
 <?php
 
 
-$bdd = new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', '');
+include('bdd.php');
 $ID_Centre = $_SESSION['centre'];
 $requete = $bdd->prepare("SELECT p.URL_Photo, e.ID_Centre FROM photo p JOIN evenement e ON e.ID_Evenement = p.ID_Evenement WHERE e.ID_Centre = :id_centre");
 $requete->bindValue(':id_centre', $ID_Centre, PDO::PARAM_STR);
