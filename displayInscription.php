@@ -1,6 +1,6 @@
 <?php
 $today = date("Y-m-d");
-$idPers = $_SESSION['id'];
+$idPers = (isset($_SESSION['id'])) ? ($_SESSION['id']) : NULL;
 $idEvent = $_GET['id_evenement'];
 include('bdd.php');
 $requete = $bdd->prepare("SELECT * FROM participer WHERE ID_Evenement = :id_evenement AND ID_Personne = :id_personne");
